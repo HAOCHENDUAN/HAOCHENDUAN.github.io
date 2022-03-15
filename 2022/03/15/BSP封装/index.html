@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>BSP封装 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="BSP封装什么是BSP​        板级支持包(BSP)可以用来构建主板硬件的所有软件资源，可以用来初始化与运作操作系统的简易代码。在RM中，BSP可以理解为是一个封装了外设底层代码和初级逻辑的函数，在进行程序逻辑编写时，可以仅使用编写好的BSP来完成逻辑，不再需要操作底盘。通俗来说，对于cube生成的代码，如果BSP封装后的逻辑中不出现hal库函数，则达到BSP目的之一。如若写一个好的BSP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BSP封装">
+<meta property="og:url" content="http://example.com/2022/03/15/BSP%E5%B0%81%E8%A3%85/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="BSP封装什么是BSP​        板级支持包(BSP)可以用来构建主板硬件的所有软件资源，可以用来初始化与运作操作系统的简易代码。在RM中，BSP可以理解为是一个封装了外设底层代码和初级逻辑的函数，在进行程序逻辑编写时，可以仅使用编写好的BSP来完成逻辑，不再需要操作底盘。通俗来说，对于cube生成的代码，如果BSP封装后的逻辑中不出现hal库函数，则达到BSP目的之一。如若写一个好的BSP">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-03-15T08:21:49.000Z">
+<meta property="article:modified_time" content="2022-03-15T08:27:02.024Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="RM">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-BSP封装" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/15/BSP%E5%B0%81%E8%A3%85/" class="article-date">
+  <time class="dt-published" datetime="2022-03-15T08:21:49.000Z" itemprop="datePublished">2022-03-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      BSP封装
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="BSP封装"><a href="#BSP封装" class="headerlink" title="BSP封装"></a>BSP封装</h1><h2 id="什么是BSP"><a href="#什么是BSP" class="headerlink" title="什么是BSP"></a>什么是BSP</h2><p>​        板级支持包(BSP)可以用来构建主板硬件的所有软件资源，可以用来初始化与运作操作系统的简易代码。在RM中，BSP可以理解为是一个封装了外设底层代码和初级逻辑的函数，在进行程序逻辑编写时，可以仅使用编写好的BSP来完成逻辑，不再需要操作底盘。通俗来说，对于cube生成的代码，如果BSP封装后的逻辑中不出现hal库函数，则达到BSP目的之一。如若写一个好的BSP则需要注意代码的抑制性。</p>
+<h2 id="实例（can外设的bsp）"><a href="#实例（can外设的bsp）" class="headerlink" title="实例（can外设的bsp）"></a>实例（can外设的bsp）</h2><h3 id="一、命名规则"><a href="#一、命名规则" class="headerlink" title="一、命名规则"></a>一、命名规则</h3><p>​        bsp_外设名.后缀</p>
+<h3 id="二、封装步骤"><a href="#二、封装步骤" class="headerlink" title="二、封装步骤"></a>二、封装步骤</h3><h4 id="1-准备：先新建俩个文件，-c和-h，在头文件里需调用芯片"><a href="#1-准备：先新建俩个文件，-c和-h，在头文件里需调用芯片" class="headerlink" title="1. 准备：先新建俩个文件，.c和.h，在头文件里需调用芯片"></a>1. 准备：先新建俩个文件，.c和.h，在头文件里需调用芯片</h4><pre><code> <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> BSP_CAN_H</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BSP_CAN_H</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;stm32f4xx.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+</code></pre>
+<h4 id="2-在源文件中封装函数，并将函数名及其注释写到头文件里方便查阅"><a href="#2-在源文件中封装函数，并将函数名及其注释写到头文件里方便查阅" class="headerlink" title="2. 在源文件中封装函数，并将函数名及其注释写到头文件里方便查阅"></a>2. 在源文件中封装函数，并将函数名及其注释写到头文件里方便查阅</h4><pre><code> <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">     <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 初始化集合</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">     <span class="type">void</span> <span class="title function_">CAN_Init</span><span class="params">(<span class="type">void</span>)</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">​     </span><br><span class="line">     <span class="comment">/**</span></span><br><span class="line"><span class="comment">      * 发送电流函数</span></span><br><span class="line"><span class="comment">      */</span></span><br><span class="line">     voidCAN_Sendcurrnt(CAN_HandleTypeDef*hcan,</span><br><span class="line">     int16_tid,int16_tcurrent);</span><br></pre></td></tr></table></figure>
+</code></pre>
+<h3 id="三、函数编写"><a href="#三、函数编写" class="headerlink" title="三、函数编写"></a>三、函数编写</h3><h4 id="3-1初始化函数-CAN-INIT"><a href="#3-1初始化函数-CAN-INIT" class="headerlink" title="3.1初始化函数 CAN_INIT"></a>3.1初始化函数 CAN_INIT</h4><pre><code>    驱动电机时需要接收电机返回的数据，而所有外设返回的信息都是从can总线上返回的，为了得到所需的数据，需设置过滤器来获得所需的数据，然后掉用can configfilter，canstart，等初始化函数，完成can外设的初始化，并定义
+</code></pre>
+   <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">CAN_FilterTypeDef can_filter_st;</span><br><span class="line">can_filter_st.FilterActivation = ENABLE;</span><br><span class="line">can_filter_st.FilterMode=CAN_FILTERMODE_IDMAS;</span><br><span class="line">can_filter_st.FilterScale=CAN_FILTERSCALE_32B;</span><br><span class="line">can_filter_st.FilterIdHigh = <span class="number">0x0000</span>;</span><br><span class="line">can_filter_st.FilterIdLow = <span class="number">0x0000</span>;</span><br><span class="line">can_filter_st.FilterMaskIdHigh = <span class="number">0x0000</span>;</span><br><span class="line">can_filter_st.FilterMaskIdLow = <span class="number">0x0000</span>;</span><br><span class="line">can_filter_st.FilterBank = <span class="number">0</span>;</span><br><span class="line">can_filter_st.FilterFIFOAssignment=CAN_RX_FIF;</span><br><span class="line">HAL_CAN_ConfigFilter(&amp;hcan1, &amp;can_filter_st);</span><br><span class="line">HAL_CAN_Start(&amp;hcan1);</span><br><span class="line">HAL_CAN_ActivateNotification(&amp;hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);</span><br><span class="line">can_filter_st.SlaveStartFilterBank = <span class="number">14</span>;</span><br><span class="line">can_filter_st.FilterBank = <span class="number">14</span>;       <span class="comment">//chassis_tx_message.StdId=CAN_CHASSIS_ALL_I;</span></span><br><span class="line"><span class="comment">// chassis_tx_message.IDE = CAN_ID_STD;</span></span><br><span class="line"><span class="comment">// chassis_tx_message.RTR = CAN_RTR_DATA;</span></span><br><span class="line"><span class="comment">// chassis_tx_message.DLC = 0x08; </span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-2回调函数的数据HAL-CAN-RxFifo0MsgPendingCallback"><a href="#3-2回调函数的数据HAL-CAN-RxFifo0MsgPendingCallback" class="headerlink" title="3.2回调函数的数据HAL_CAN_RxFifo0MsgPendingCallback"></a>3.2回调函数的数据HAL_CAN_RxFifo0MsgPendingCallback</h4><p>​        返回的数据可以类比为一个分为头和尾的数据块，头里写着电调id，数据长度等数据；尾里写着实际的数据，故需要将数据进行分析区别，放入对应的地方进行需要的计算。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 回调函数的数据分析</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">HAL_CAN_RxFifo0MsgPendingCallback</span><span class="params">(CAN_HandleTypeDef *hcan)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> speed;</span><br><span class="line">    CAN_RxHeaderTypeDef rx_header;</span><br><span class="line"></span><br><span class="line">    HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &amp;rx_header, rx_data);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">switch</span> (rx_header.StdId)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">case</span> CAN_3508_M1_ID:</span><br><span class="line">        <span class="keyword">case</span> CAN_3508_M2_ID:</span><br><span class="line">        <span class="keyword">case</span> CAN_3508_M3_ID:</span><br><span class="line">        <span class="keyword">case</span> CAN_3508_M4_ID:</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">static</span> <span class="type">uint8_t</span> i = <span class="number">0</span>;</span><br><span class="line">            <span class="comment">//get motor id</span></span><br><span class="line">            i = rx_header.StdId - CAN_3508_M1_ID;</span><br><span class="line">            get_motor_measure(&amp;motor_chassis[i], rx_data);</span><br><span class="line">            speed=motor_chassis[i].speed_rpm/<span class="number">60.0</span>/<span class="number">19.0</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-3发送电流函数CAN-Sendcurrnt"><a href="#3-3发送电流函数CAN-Sendcurrnt" class="headerlink" title="3.3发送电流函数CAN_Sendcurrnt"></a>3.3发送电流函数CAN_Sendcurrnt</h4><p>​        给电机发数据时要查阅电调id，明白所需发送什么样的电流，此处需要调用hal库的HAL_CAN_AddTxMessage函数，故根据此函数所需的参数编写所需的数组和结构体。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 发送电流函数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">CAN_Sendcurrnt</span><span class="params">(CAN_HandleTypeDef *hcan,<span class="type">int16_t</span> id,<span class="type">int16_t</span> current)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint8_t</span> data[<span class="number">8</span>];</span><br><span class="line">    <span class="keyword">if</span>(id&lt;=<span class="number">4</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">switch</span> (id)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">1</span>):</span><br><span class="line">                data[<span class="number">0</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">1</span>] = current;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">2</span>):</span><br><span class="line">                data[<span class="number">2</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">3</span>] = current;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">3</span>):</span><br><span class="line">                data[<span class="number">4</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">5</span>] = current;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">4</span>):</span><br><span class="line">                data[<span class="number">6</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">7</span>] = current;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        CAN_TxHeaderTypeDef chassis_tx_message;</span><br><span class="line">        chassis_tx_message.DLC = <span class="number">0x08</span>;</span><br><span class="line">        chassis_tx_message.IDE = CAN_ID_STD;</span><br><span class="line">        chassis_tx_message.StdId = <span class="number">0X200</span>;</span><br><span class="line">        chassis_tx_message.RTR = CAN_RTR_DATA;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        HAL_CAN_AddTxMessage(hcan,&amp;chassis_tx_message,data, &amp;transmitmailbox);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">switch</span> (id)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">5</span>):</span><br><span class="line">                data[<span class="number">0</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">1</span>] = current;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">6</span>):</span><br><span class="line">                data[<span class="number">2</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">3</span>] = current;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">7</span>):</span><br><span class="line">                data[<span class="number">4</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">5</span>] = current;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">8</span>):</span><br><span class="line">                data[<span class="number">6</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">7</span>] = current;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        CAN_TxHeaderTypeDef chassis_tx_message;</span><br><span class="line">        chassis_tx_message.DLC = <span class="number">8</span>;</span><br><span class="line">        chassis_tx_message.IDE = CAN_ID_STD;</span><br><span class="line">        chassis_tx_message.StdId = <span class="number">0X1FF</span>;</span><br><span class="line">        chassis_tx_message.RTR = CAN_RTR_DATA;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        HAL_CAN_AddTxMessage(hcan,&amp;chassis_tx_message,data, &amp;transmitmailbox);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/03/15/BSP%E5%B0%81%E8%A3%85/" data-id="cl0rvgkgn0000ogvcd1pma8ls" data-title="BSP封装" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RM/" rel="tag">RM</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/03/14/RM%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">RM电机驱动</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/RM/" rel="tag">RM</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/RM/" style="font-size: 10px;">RM</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/03/15/BSP%E5%B0%81%E8%A3%85/">BSP封装</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/14/RM%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8/">RM电机驱动</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
