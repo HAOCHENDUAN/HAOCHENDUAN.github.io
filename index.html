@@ -94,19 +94,19 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h1 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h1><h2 id="第六章-常微方程"><a href="#第六章-常微方程" class="headerlink" title="第六章 常微方程"></a>第六章 常微方程</h2><h3 id="一、微分方程的定义"><a href="#一、微分方程的定义" class="headerlink" title="一、微分方程的定义"></a>一、微分方程的定义</h3><ol>
-<li><p>&#x3D;&#x3D;微分方程&#x3D;&#x3D;：表示<strong>未知函数</strong>，<strong>未知函数的导数</strong>和<strong>自变量</strong>之间的关系的关系式</p>
+<li><p>==微分方程==：表示<strong>未知函数</strong>，<strong>未知函数的导数</strong>和<strong>自变量</strong>之间的关系的关系式</p>
 </li>
-<li><p>&#x3D;&#x3D;常微分方程&#x3D;&#x3D;：未知函数为<strong>一元函数</strong>的微分方程    </p>
+<li><p>==常微分方程==：未知函数为<strong>一元函数</strong>的微分方程    </p>
 </li>
-<li><p>&#x3D;&#x3D;偏微分方程&#x3D;&#x3D;：未知函数含有<strong>俩个或俩个以上</strong>的自变量的微分方程    </p>
+<li><p>==偏微分方程==：未知函数含有<strong>俩个或俩个以上</strong>的自变量的微分方程    </p>
 </li>
-<li><p>&#x3D;&#x3D;线性微分方程&#x3D;&#x3D;：微分方程中所含的<strong>未知函数及其各阶导数均为一次幂</strong></p>
+<li><p>==线性微分方程==：微分方程中所含的<strong>未知函数及其各阶导数均为一次幂</strong></p>
 </li>
-<li><p>&#x3D;&#x3D;常系数线性微分方程&#x3D;&#x3D;：未知数及其各阶导数的<strong>系数均为常数</strong></p>
+<li><p>==常系数线性微分方程==：未知数及其各阶导数的<strong>系数均为常数</strong></p>
 </li>
-<li><p>&#x3D;&#x3D;初始条件&#x3D;&#x3D;：用来求解未知数的函数式</p>
+<li><p>==初始条件==：用来求解未知数的函数式</p>
 </li>
-<li><p>&#x3D;&#x3D;线性相关&#x3D;&#x3D;：**$$<br>k_1,k_2，等是n个不全为0的常数，k_1y_1(x) + k_2y_2(x) + · · · + k_ny_n(x) &#x3D; 0<br>$$**</p>
+<li><p>==线性相关==：<strong><script type="math/tex">k_1,k_2，等是n个不全为0的常数，k_1y_1(x) + k_2y_2(x) + · · · + k_ny_n(x) = 0</script></strong></p>
 </li>
 </ol>
 <h3 id="二、微分方程的解"><a href="#二、微分方程的解" class="headerlink" title="二、微分方程的解"></a>二、微分方程的解</h3><h4 id="（一）基本概念"><a href="#（一）基本概念" class="headerlink" title="（一）基本概念"></a>（一）基本概念</h4><ol>
@@ -115,39 +115,46 @@
 <li>微分方程的特解：由初始条件确定了未知常数的通解，即不含未知数的解</li>
 <li>微分方程的阶：未知函数的导数的最高次幂（一般二阶及二阶以上称为高阶微分方程）</li>
 </ol>
-<h4 id="（二）不同微分方程的解"><a href="#（二）不同微分方程的解" class="headerlink" title="（二）不同微分方程的解"></a>（二）不同微分方程的解</h4><h5 id="一阶微分方程"><a href="#一阶微分方程" class="headerlink" title="一阶微分方程"></a>一阶微分方程</h5><h6 id="1-1-可分离变量的微分方程"><a href="#1-1-可分离变量的微分方程" class="headerlink" title="1.1 可分离变量的微分方程"></a>1.1 可分离变量的微分方程</h6><p>​       定义：y和x可以分离到等号俩边的微分方程<br>​       形式：**$ {\frac{dx}{dy}}&#x3D;f(x)<em>g(y) $</em>*<br>​       解法：将y和dy，x和dx分别放在等号的俩边，对俩边分别求积分<br>​       特点：一般可分离变量的微分方程是以G(y) &#x3D; F(x) + C所确定的，故称为隐式解</p>
-<h6 id="1-2齐次方程"><a href="#1-2齐次方程" class="headerlink" title="1.2齐次方程"></a>1.2齐次方程</h6><p>​       定义：形如**$ {\frac{dy}{dx}}&#x3D; ϕ({\frac {y}{x}})$**的一阶微分方程<br>​       解法：变量代换${\frac{dy}{dx}}$，将其化为可分离变量的方程</p>
-<h6 id="1-3一阶线性微分方程"><a href="#1-3一阶线性微分方程" class="headerlink" title="1.3一阶线性微分方程"></a>1.3一阶线性微分方程</h6><p>​       标准式及其对应解：<br>​                <strong>$ y’ + P(x)y &#x3D; 0 $</strong>                          <strong>$ y&#x3D;Ce^{-\int p(x)dx} $</strong> ,C为任意常数<br>​                <strong>$ y’+P(x)y&#x3D;Q(x) $</strong>                     **$ y&#x3D;[\int Q(x)e^{\int P(x)dx}+C]e^{\int P(x)dx} $**，C为任意常数</p>
-<h6 id="1-4伯努利方程"><a href="#1-4伯努利方程" class="headerlink" title="1.4伯努利方程"></a>1.4伯努利方程</h6><p>​       标准式：<br>​              <strong>$ {\frac{dy}{dx}}+P(x)y&#x3D;Q(x)y^n $</strong> ，n不等于1，2<br>       解法：<img src="D:\Practice\截图\Snipaste_2022-03-04_10-16-24.png" alt="Snipaste_2022-03-04_10-16-24" style="zoom: 80%;" /></p>
+<h4 id="（二）不同微分方程的解"><a href="#（二）不同微分方程的解" class="headerlink" title="（二）不同微分方程的解"></a>（二）不同微分方程的解</h4><h5 id="一阶微分方程"><a href="#一阶微分方程" class="headerlink" title="一阶微分方程"></a>一阶微分方程</h5><h6 id="1-1-可分离变量的微分方程"><a href="#1-1-可分离变量的微分方程" class="headerlink" title="1.1 可分离变量的微分方程"></a>1.1 可分离变量的微分方程</h6><p>​       定义：y和x可以分离到等号俩边的微分方程<br>​       形式：<strong>$ {\frac{dx}{dy}}=f(x)*g(y) $</strong><br>​       解法：将y和dy，x和dx分别放在等号的俩边，对俩边分别求积分<br>​       特点：一般可分离变量的微分方程是以G(y) = F(x) + C所确定的，故称为隐式解</p>
+<h6 id="1-2齐次方程"><a href="#1-2齐次方程" class="headerlink" title="1.2齐次方程"></a>1.2齐次方程</h6><p>​       定义：形如<strong>$ {\frac{dy}{dx}}= ϕ({\frac {y}{x}})$</strong>的一阶微分方程<br>​       解法：变量代换${\frac{dy}{dx}}$，将其化为可分离变量的方程</p>
+<h6 id="1-3一阶线性微分方程"><a href="#1-3一阶线性微分方程" class="headerlink" title="1.3一阶线性微分方程"></a>1.3一阶线性微分方程</h6><p>​       标准式及其对应解：<br>​                <strong>$ y’ + P(x)y = 0 $</strong>                          <strong>$ y=Ce^{-\int p(x)dx} $</strong> ,C为任意常数<br>​                <strong>$ y’+P(x)y=Q(x) $</strong>                     <strong>$ y=[\int Q(x)e^{\int P(x)dx}+C]e^{\int P(x)dx} $</strong>，C为任意常数</p>
+<h6 id="1-4伯努利方程"><a href="#1-4伯努利方程" class="headerlink" title="1.4伯努利方程"></a>1.4伯努利方程</h6><p>​       标准式：<br>​              <strong>$ {\frac{dy}{dx}}+P(x)y=Q(x)y^n $</strong> ，n不等于1，2<br>       解法：<img src="D:\Practice\截图\Snipaste_2022-03-04_10-16-24.png" alt="Snipaste_2022-03-04_10-16-24" style="zoom: 80%;" /></p>
 <h6 id="1-5可降阶的高阶微分方程"><a href="#1-5可降阶的高阶微分方程" class="headerlink" title="1.5可降阶的高阶微分方程"></a>1.5可降阶的高阶微分方程</h6><ol>
-<li>**$ y^{(n)}&#x3D;f(x) $**型微分方程：该类特点即为方程右侧仅含x函数，故将x置于等号右侧，多次积分即可求解</li>
-<li>**$ y’’&#x3D;f(x,y’) $**型微分方程：设$ P(x)&#x3D;y’ $，将原式转换为一阶微分方程</li>
-<li>**$ y’’&#x3D;f(y,y’) $<strong>型微分方程：解法：将y’设为P，则y’’可表示为</strong>$y{\frac{dy}{dx}}$**，则将原式转换关于y和p的一次微分方程</li>
+<li><strong>$ y^{(n)}=f(x) $</strong>型微分方程：该类特点即为方程右侧仅含x函数，故将x置于等号右侧，多次积分即可求解<ol>
+<li><strong>$ y’’=f(x,y’) $</strong>型微分方程：设$ P(x)=y’ $，将原式转换为一阶微分方程</li>
+<li><strong>$ y’’=f(y,y’) $</strong>型微分方程：解法：将y’设为P，则y’’可表示为<strong>$y{\frac{dy}{dx}}$</strong>，则将原式转换关于y和p的一次微分方程</li>
 </ol>
-<h5 id="二阶微分方程"><a href="#二阶微分方程" class="headerlink" title="二阶微分方程"></a>二阶微分方程</h5><h6 id="1-1-二阶线性齐次微分方程"><a href="#1-1-二阶线性齐次微分方程" class="headerlink" title="1.1 二阶线性齐次微分方程"></a>1.1 二阶线性齐次微分方程</h6><p>​    定义：自由项为0的二阶线性微分方程（二阶线性微分方程定义：**$y ‘’+ P(x)y’ +  Q(x)y &#x3D; f(x)$<strong>）<br>​    一般形式：$y’’+P(x)y’+Q(x)y&#x3D;0$<br>​    叠加原理：<br>           定义：若$y_1$和$y_2$均为二阶线性齐次微分方程的俩个解，则</strong>$y &#x3D; C_1y_1 + C_2y_2$<strong>也是原二阶线性齐次微分方程的解。（其中$C_1,C_2$为任                          意常数）<br>​          注意：其中当$y_1,y_2$线性无关时，y为原二阶齐次微分方程的通解<br>          特例：已知二阶线性齐次微分方程的一个特解，求通解时需要求另一个与其不线性相关的特解，故设</strong>$y_2&#x3D;u（x）<em>y_1$<strong>，代入等                         于0求得</strong>$u（x）$<strong>，以得到</strong>$y_2$</em>* </p>
-<h6 id="1-2二阶线性非齐次微分方程"><a href="#1-2二阶线性非齐次微分方程" class="headerlink" title="1.2二阶线性非齐次微分方程"></a>1.2二阶线性非齐次微分方程</h6><p>​     定义：自由项为**$f(x)$<strong>的二阶线性微分方程<br>​     一般形式：</strong>$y’’+P(x)y’+Q(x)y&#x3D;f(x)$**<br>​     定理：若**$y_1,y_2 $<strong>为二阶线性非齐次微分方程的俩个特解，则</strong>$y &#x3D; y_1 − y_2$<strong>,是对应二阶线性齐次微分方程的解<br>​     通解：若</strong>$y^*$<strong>是二阶线性非齐次微分方程的特解，</strong>$y_c$<em><em>是对应的二阶线性齐次微分方程的通解，则二阶线性非齐次微分方程的通解是                             <em><em>$y&#x3D;y^</em>+y_c$</em></em><br>​     叠加原理：将二阶线性非齐次微分方程的自由项写为俩函数之和</em>*$y’’ + P(x)y’ + Q(x)y &#x3D; f_1(x) + f_2(x)$<strong>，$y_1$和</strong>$y_2$<strong>是二阶线性非齐                               次微分方程</strong>$y’’+ P（x）y’+ Q（x）y&#x3D;f_1（x）$<strong>与$y’’+P（x)y’+Q（x）y&#x3D;f_2（x）$的特解，则</strong>$y&#x3D;y_1+y_2$**是原                       二阶线性非齐次微分方程的特解<br>      推广：<img src="D:\Practice\截图\Snipaste_2022-03-06_23-53-35.png" alt="Snipaste_2022-03-06_23-53-35" style="zoom:50%;" /></p>
-<h6 id="1-3二阶常系数齐次线性微分方程"><a href="#1-3二阶常系数齐次线性微分方程" class="headerlink" title="1.3二阶常系数齐次线性微分方程"></a>1.3二阶常系数齐次线性微分方程</h6><p>​     一般形式：**$y’’+py’+qy&#x3D;0(p,q为常数)$**<br>​     解法：求出特征方程**$(r^2+pr+q)e^{rx}&#x3D;0$<strong>解得特征根r，根据r的不同情况有三种解法<br>      （1）</strong>$∆ &#x3D; p^2−4q&gt;0$<strong>时，</strong>$y_1&#x3D;e^{r_1x}+e^{r_2x}$<strong>,</strong>$r_1,r_2$<strong>线性无关，则通解为：<br>               <strong>$y&#x3D;C_1e^{r_1x}+C_2e^{r_2x}$</strong><br>      （2）</strong>$∆ &#x3D;p2−4q&#x3D;0$<strong>时，可得一个特解</strong>$y_1&#x3D;e^{rx}$<strong>，设$y_2&#x3D;u(x)e^{rx}$，<br>​              代入</strong>$y’’+py’+qy&#x3D;0$**，取特解$u(x)&#x3D;x$，得$y_2&#x3D;xe^{rx}$，则通解为：<br>​              $y&#x3D;C_1e^{rx}+C_2xe^{rx}&#x3D;(C_1+C_2x)e^{rx}$<br>      （3）$∆&#x3D;p^2−4q&lt;0$时，$y_1&#x3D;e^{(α+iβ)}&#x3D;e^{αx}\cdot e^{iβx},\bar{y_1}&#x3D;e^{(α−iβ)x}&#x3D;e^{αx}\cdot e^{−iβx}$ ，<br>​              根据欧拉公式$e^{\beta ix}&#x3D;cos\theta +isin\theta$，由二次齐次线性方程解的叠加原理得通解为：<br>​              $y&#x3D;e^{\alpha x}(C1cos\beta+C2sin\beta)$，$C_1,C_2 $为任意常数<br>​        (4)总结：</p>
+</li>
+</ol>
+<h5 id="二阶微分方程"><a href="#二阶微分方程" class="headerlink" title="二阶微分方程"></a>二阶微分方程</h5><h6 id="1-1-二阶线性齐次微分方程"><a href="#1-1-二阶线性齐次微分方程" class="headerlink" title="1.1 二阶线性齐次微分方程"></a>1.1 二阶线性齐次微分方程</h6><p>​    定义：自由项为0的二阶线性微分方程（二阶线性微分方程定义：<strong>$y ‘’+ P(x)y’ +  Q(x)y = f(x)$</strong>）<br>​    一般形式：$y’’+P(x)y’+Q(x)y=0$<br>​    叠加原理：<br>           定义：若$y_1$和$y_2$均为二阶线性齐次微分方程的俩个解，则<strong>$y = C_1y_1 + C_2y_2$</strong>也是原二阶线性齐次微分方程的解。（其中$C_1,C_2$为任                          意常数）<br>​          注意：其中当$y_1,y_2$线性无关时，y为原二阶齐次微分方程的通解<br>          特例：已知二阶线性齐次微分方程的一个特解，求通解时需要求另一个与其不线性相关的特解，故设<strong>$y_2=u（x）*y_1$</strong>，代入等                         于0求得<strong>$u（x）$</strong>，以得到<strong>$y_2$</strong> </p>
+<h6 id="1-2二阶线性非齐次微分方程"><a href="#1-2二阶线性非齐次微分方程" class="headerlink" title="1.2二阶线性非齐次微分方程"></a>1.2二阶线性非齐次微分方程</h6><p>​     定义：自由项为<strong>$f(x)$</strong>的二阶线性微分方程<br>​     一般形式：<strong>$y’’+P(x)y’+Q(x)y=f(x)$</strong><br>​     定理：若<strong>$y_1,y_2 $</strong>为二阶线性非齐次微分方程的俩个特解，则<strong>$y = y_1 − y_2$</strong>,是对应二阶线性齐次微分方程的解<br>​     通解：若<strong>$y^*$</strong>是二阶线性非齐次微分方程的特解，<strong>$y_c$</strong>是对应的二阶线性齐次微分方程的通解，则二阶线性非齐次微分方程的通解是                             <strong>$y=y^*+y_c$</strong><br>​     叠加原理：将二阶线性非齐次微分方程的自由项写为俩函数之和<strong>$y’’ + P(x)y’ + Q(x)y = f_1(x) + f_2(x)$</strong>，$y_1$和<strong>$y_2$</strong>是二阶线性非齐                               次微分方程<strong>$y’’+ P（x）y’+ Q（x）y=f_1（x）$</strong>与$y’’+P（x)y’+Q（x）y=f_2（x）$的特解，则<strong>$y=y_1+y_2$</strong>是原                       二阶线性非齐次微分方程的特解<br>      推广：<img src="D:\Practice\截图\Snipaste_2022-03-06_23-53-35.png" alt="Snipaste_2022-03-06_23-53-35" style="zoom:50%;" /></p>
+<h6 id="1-3二阶常系数齐次线性微分方程"><a href="#1-3二阶常系数齐次线性微分方程" class="headerlink" title="1.3二阶常系数齐次线性微分方程"></a>1.3二阶常系数齐次线性微分方程</h6><p>​     一般形式：<strong>$y’’+py’+qy=0(p,q为常数)$</strong><br>​     解法：求出特征方程<strong>$(r^2+pr+q)e^{rx}=0$</strong>解得特征根r，根据r的不同情况有三种解法<br>      （1）<strong>$∆ = p^2−4q&gt;0$</strong>时，<strong>$y_1=e^{r_1x}+e^{r_2x}$</strong>,<strong>$r_1,r_2$</strong>线性无关，则通解为：<br>               <strong>$y=C_1e^{r_1x}+C_2e^{r_2x}$</strong><br>      （2）<strong>$∆ =p2−4q=0$</strong>时，可得一个特解<strong>$y_1=e^{rx}$</strong>，设$y_2=u(x)e^{rx}$，<br>​              代入<strong>$y’’+py’+qy=0$</strong>，取特解$u(x)=x$，得$y_2=xe^{rx}$，则通解为：<br>​              $y=C_1e^{rx}+C_2xe^{rx}=(C_1+C_2x)e^{rx}$<br>      （3）$∆=p^2−4q&lt;0$时，$y_1=e^{(α+iβ)}=e^{αx}\cdot e^{iβx},\bar{y_1}=e^{(α−iβ)x}=e^{αx}\cdot e^{−iβx}$ ，<br>​              根据欧拉公式$e^{\beta ix}=cos\theta +isin\theta$，由二次齐次线性方程解的叠加原理得通解为：<br>​              $y=e^{\alpha x}(C1cos\beta+C2sin\beta)$，$C_1,C_2 $为任意常数<br>​        (4)总结：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="left">$y’’+py’+qy&#x3D;0$的特征根</th>
-<th align="left">**$y’’+py’+qy&#x3D;0$**的通解</th>
+<th style="text-align:left">$y’’+py’+qy=0$的特征根</th>
+<th style="text-align:left"><strong>$y’’+py’+qy=0$</strong>的通解</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left"><strong>俩个不相等的实根</strong>  $r_1\neq r_2$</td>
-<td align="left">$y&#x3D;C_1e^{r_1x}+C_2e^{r_2x}$</td>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>俩个不相等的实根</strong>  $r_1\neq r_2$</td>
+<td style="text-align:left">$y=C_1e^{r_1x}+C_2e^{r_2x}$</td>
 </tr>
 <tr>
-<td align="left"><strong>俩个相等的实根</strong> $r_1&#x3D;r_2$</td>
-<td align="left">$y&#x3D;(C_1+C_2x)e^{rx}$</td>
+<td style="text-align:left"><strong>俩个相等的实根</strong> $r_1=r_2$</td>
+<td style="text-align:left">$y=(C_1+C_2x)e^{rx}$</td>
 </tr>
 <tr>
-<td align="left"><strong>俩个共轭实根</strong>$r_{1,2}&#x3D;\alpha\pm \beta x $</td>
-<td align="left">$y&#x3D;e^{\alpha x}(C_1cos\beta x+C_2cos\beta x)$</td>
+<td style="text-align:left"><strong>俩个共轭实根</strong>$r_{1,2}=\alpha\pm \beta x $</td>
+<td style="text-align:left">$y=e^{\alpha x}(C_1cos\beta x+C_2cos\beta x)$</td>
 </tr>
-</tbody></table>
-<p>​        (5)拓展：<br>​               二阶常系数齐次线性微分方程的上述解法可以推广到n阶常系数齐次微分方程，其一般形式为：<br>​                     $y^{(n)}+p_1y^{(n-1)}+p_2y^{(n-2)}+\ldots+p_{n-1}y+p_n&#x3D;0$                            而代数方程<br>​                     $r^n+p_1r^{n-1}+p_2r^{n-2}+\ldots+p_{n-1}y+p_n&#x3D;0$是其特征方程</p>
+</tbody>
+</table>
+</div>
+<p>​        (5)拓展：<br>​               二阶常系数齐次线性微分方程的上述解法可以推广到n阶常系数齐次微分方程，其一般形式为：<br>​                     $y^{(n)}+p_1y^{(n-1)}+p_2y^{(n-2)}+\ldots+p_{n-1}y+p_n=0$                            而代数方程<br>​                     $r^n+p_1r^{n-1}+p_2r^{n-2}+\ldots+p_{n-1}y+p_n=0$是其特征方程</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -155,7 +162,8 @@
 <th>微分方程通解中的对应项</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>单个实根r</td>
 <td>若给出一项：$Ce^{rx}$<br />给出俩项$e^{\alpha x}(C_1cos\beta x+C_2sin\beta x)$</td>
 </tr>
@@ -164,35 +172,42 @@
 <td>给出k项：$Ce^{rx}(D_1+D_2x+\dots+D_kx^{x+1})$</td>
 </tr>
 <tr>
-<td>l重共轭复根$r&#x3D;\alpha\pm i\beta $</td>
+<td>l重共轭复根$r=\alpha\pm i\beta $</td>
 <td>给出2l项：$e^{\alpha x}[(E_1+E_2x+\ldots+E_lx^{l-1})cos\beta  x+(F_1+F_2x+\ldots+F_lx^{l-1}sin\beta x)]$</td>
 </tr>
-</tbody></table>
-<h6 id="1-4-二阶常系数非齐次线性微分方程"><a href="#1-4-二阶常系数非齐次线性微分方程" class="headerlink" title="1.4 二阶常系数非齐次线性微分方程"></a>1.4 二阶常系数非齐次线性微分方程</h6><p>​     一般式：$y’’+py’+qy&#x3D;f(x)$<br>​     通解：$y&#x3D;y_c+y^*$，$y_c$为对应齐次方程的特解，$y^*$为二阶常系数非齐次线性微分方程的一个特解。<br>   （1）自由项为$f(x)&#x3D;p_m(x)e^{\lambda x}$ 型：<br>​            其中$\lambda$是常数；$p_m(x)$是关于x的m次多项式；<br>​            求解步骤：<br>​               （1.1）将原方程化为标准形式：$y’’+py’+qy&#x3D;f(x)$，求出对应齐次方程$y’’+py’+qy&#x3D;0$的通解$y_c$；<br>​                           按照下表确定非齐次方程的特解$y^*$形式，代入方程求出特解；</p>
+</tbody>
+</table>
+</div>
+<h6 id="1-4-二阶常系数非齐次线性微分方程"><a href="#1-4-二阶常系数非齐次线性微分方程" class="headerlink" title="1.4 二阶常系数非齐次线性微分方程"></a>1.4 二阶常系数非齐次线性微分方程</h6><p>​     一般式：$y’’+py’+qy=f(x)$<br>​     通解：$y=y_c+y^<em>$，$y_c$为对应齐次方程的特解，$y^</em>$为二阶常系数非齐次线性微分方程的一个特解。<br>   （1）自由项为$f(x)=p_m(x)e^{\lambda x}$ 型：<br>​            其中$\lambda$是常数；$p_m(x)$是关于x的m次多项式；<br>​            求解步骤：<br>​               （1.1）将原方程化为标准形式：$y’’+py’+qy=f(x)$，求出对应齐次方程$y’’+py’+qy=0$的通解$y_c$；<br>​                           按照下表确定非齐次方程的特解$y^*$形式，代入方程求出特解；</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th><strong>$y’’+py’+qy&#x3D;p_m(x)e^{\lambda x}$的特解</strong></th>
-<th><em><em>$y^</em>&#x3D;x^kQ_m(x)e^{\lambda x}$</em>*</th>
+<th><strong>$y’’+py’+qy=p_m(x)e^{\lambda x}$的特解</strong></th>
+<th><strong>$y^*=x^kQ_m(x)e^{\lambda x}$</strong></th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><strong>$\lambda$不是特征根时</strong></td>
-<td><em><em>$y^</em>&#x3D;Q_m(x)e^{\lambda x}$</em>*</td>
+<td><strong>$y^*=Q_m(x)e^{\lambda x}$</strong></td>
 </tr>
 <tr>
 <td><strong>$\lambda$是特征单根时</strong></td>
-<td>$y^*&#x3D;xQ_m(x)e^{\lambda x}$</td>
+<td>$y^*=xQ_m(x)e^{\lambda x}$</td>
 </tr>
 <tr>
 <td><strong>$\lambda$是特征重根时</strong></td>
-<td>$y^*&#x3D;x^2Q_m(x)e^{\lambda x}$</td>
+<td>$y^*=x^2Q_m(x)e^{\lambda x}$</td>
 </tr>
-</tbody></table>
-<p>​               （1.2）求出非齐次方程的通解$y&#x3D;y_c+y^*$；<br>​               （1.3）将初值条件代入通解中确定$C_1,C_2$，得到满足条件的特解。</p>
-<p>   （2）自由项为$f(x)&#x3D;e^{\lambda x}[p_l(x)cos\omega x+p_n(x)sin\omega x]$ 型：<br>            其中$p_l(x),p_n$分别是x的l次和n次多项式，$\lambda,\omega$为常数，<br>            一般的，可设其特解为：<br>           $y^*&#x3D;x^ke^{\lambda x}[R^{1}_m(x)cos\omega x+R^{2}_m(x)sin\omega x]$，<br>           其中$R^{1}_m(x),R^{2}_m(x)$为m次待定系数的多项式，$m&#x3D;max(l,n)$，<br>           &#x3D;&#x3D;特解中含有2m+1个待定系数&#x3D;&#x3D;<br>         （2.1）当$\lambda +i\omega$不是特征根时，k&#x3D;0；<br>         （2.2）当$\lambda +i\omega$是特征根是，k&#x3D;1.</p>
-<h5 id="欧拉方程"><a href="#欧拉方程" class="headerlink" title="欧拉方程"></a>欧拉方程</h5><p> 变系数线性微分方程：<br>          若线性方程$y^{n}+p_1y^{(n-1)}+\cdots +p_{n-1}y’+p_n(x)y&#x3D;f(x)$的$p_i(x)$不全为常数，则称为变系数线性微分方程。<br>   欧拉方程：<br>           一般形式：$x^ny^{(n)}+p_1y^{(n-1)}+\cdots+p_2x^{n-2}y^{(n-2)}+\cdots+p_{n-1}xy’+p_ny&#x3D;f(x)$</p>
-<h6 id="1-1二阶齐次欧拉方程"><a href="#1-1二阶齐次欧拉方程" class="headerlink" title="1.1二阶齐次欧拉方程"></a>1.1二阶齐次欧拉方程</h6><p>​           一般形式：$x^2y’’+p_1xy’+p_2y&#x3D;0$<br>​           特征方程：$k^2+(p_1-1)k+p_2&#x3D;0$</p>
+</tbody>
+</table>
+</div>
+<p>​               （1.2）求出非齐次方程的通解$y=y_c+y^*$；<br>​               （1.3）将初值条件代入通解中确定$C_1,C_2$，得到满足条件的特解。</p>
+<p>   （2）自由项为$f(x)=e^{\lambda x}[p_l(x)cos\omega x+p_n(x)sin\omega x]$ 型：<br>            其中$p_l(x),p_n$分别是x的l次和n次多项式，$\lambda,\omega$为常数，<br>            一般的，可设其特解为：<br>           $y^*=x^ke^{\lambda x}[R^{1}_m(x)cos\omega x+R^{2}_m(x)sin\omega x]$，<br>           其中$R^{1}_m(x),R^{2}_m(x)$为m次待定系数的多项式，$m=max(l,n)$，<br>           ==特解中含有2m+1个待定系数==<br>         （2.1）当$\lambda +i\omega$不是特征根时，k=0；<br>         （2.2）当$\lambda +i\omega$是特征根是，k=1.</p>
+<h5 id="欧拉方程"><a href="#欧拉方程" class="headerlink" title="欧拉方程"></a>欧拉方程</h5><p> 变系数线性微分方程：<br>          若线性方程$y^{n}+p_1y^{(n-1)}+\cdots +p_{n-1}y’+p_n(x)y=f(x)$的$p_i(x)$不全为常数，则称为变系数线性微分方程。<br>   欧拉方程：<br>           一般形式：$x^ny^{(n)}+p_1y^{(n-1)}+\cdots+p_2x^{n-2}y^{(n-2)}+\cdots+p_{n-1}xy’+p_ny=f(x)$</p>
+<h6 id="1-1二阶齐次欧拉方程"><a href="#1-1二阶齐次欧拉方程" class="headerlink" title="1.1二阶齐次欧拉方程"></a>1.1二阶齐次欧拉方程</h6><p>​           一般形式：$x^2y’’+p_1xy’+p_2y=0$<br>​           特征方程：$k^2+(p_1-1)k+p_2=0$</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -200,20 +215,24 @@
 <th>通解</th>
 </tr>
 </thead>
-<tbody><tr>
-<td>俩个相等的实根$k_1&#x3D;k_2$</td>
-<td>$y&#x3D;(C_1+C_2lnx)x^{k_1}$</td>
+<tbody>
+<tr>
+<td>俩个相等的实根$k_1=k_2$</td>
+<td>$y=(C_1+C_2lnx)x^{k_1}$</td>
 </tr>
 <tr>
 <td>俩个不相等的实根$k_1\neq k_2$</td>
-<td>$y&#x3D;C_1x^{k_1}+C_2x^{k_2}$</td>
+<td>$y=C_1x^{k_1}+C_2x^{k_2}$</td>
 </tr>
 <tr>
-<td>共轭复根$k_{1,2}&#x3D;\alpha\pm i\beta$</td>
-<td>$y&#x3D;C_1x^\alpha cos\beta lnx+C_2x^\alpha sin^\beta lnx$</td>
+<td>共轭复根$k_{1,2}=\alpha\pm i\beta$</td>
+<td>$y=C_1x^\alpha cos\beta lnx+C_2x^\alpha sin^\beta lnx$</td>
 </tr>
-</tbody></table>
-<h6 id="2-2二阶非齐次欧拉方程"><a href="#2-2二阶非齐次欧拉方程" class="headerlink" title="2.2二阶非齐次欧拉方程"></a>2.2二阶非齐次欧拉方程</h6><p>​           一般形式：$x^2y’’+p_1xy’+p_2y&#x3D;f(x)$</p>
+</tbody>
+</table>
+</div>
+<h6 id="2-2二阶非齐次欧拉方程"><a href="#2-2二阶非齐次欧拉方程" class="headerlink" title="2.2二阶非齐次欧拉方程"></a>2.2二阶非齐次欧拉方程</h6><p>​           一般形式：$x^2y’’+p_1xy’+p_2y=f(x)$</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -221,25 +240,28 @@
 <th>通解</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>$k_1,k_2$是相等的实特征根</td>
-<td>$y&#x3D;x^{k_2}[lnx\displaystyle\int x^{-k_1-1}f(x)dx-\displaystyle\int lnxx^{-k_1-1}f(x)dx]$</td>
+<td>$y=x^{k_2}[lnx\displaystyle\int x^{-k_1-1}f(x)dx-\displaystyle\int lnxx^{-k_1-1}f(x)dx]$</td>
 </tr>
 <tr>
 <td>当$k_1,k_2$是互不相等的实特征根时</td>
-<td>$y&#x3D;\frac{1}{k_1-k_2}[x^{k_1}\displaystyle\int x^{-k_1-1}f(x)dx-x^{k_2}\displaystyle\int x^{-k_2-1}f(x)dx]$</td>
+<td>$y=\frac{1}{k_1-k_2}[x^{k_1}\displaystyle\int x^{-k_1-1}f(x)dx-x^{k_2}\displaystyle\int x^{-k_2-1}f(x)dx]$</td>
 </tr>
 <tr>
-<td>当$k_{1,2}&#x3D;\alpha \pm \beta i$是共轭复根时</td>
-<td>$y&#x3D;\frac{1}{\beta}[sin\beta lnx\displaystyle\int x^{-\alpha-1}cos\beta lnxf(x)dx-cos\beta lnx\displaystyle\int x^{-\alpha-1}sin\beta lnxf(x)dx]$</td>
+<td>当$k_{1,2}=\alpha \pm \beta i$是共轭复根时</td>
+<td>$y=\frac{1}{\beta}[sin\beta lnx\displaystyle\int x^{-\alpha-1}cos\beta lnxf(x)dx-cos\beta lnx\displaystyle\int x^{-\alpha-1}sin\beta lnxf(x)dx]$</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h6 id="2-3常系数线性方程"><a href="#2-3常系数线性方程" class="headerlink" title="2.3常系数线性方程"></a>2.3常系数线性方程</h6><p>解法：<br>        （1）从方程组消去一些未知函数及其各阶导数，得到只有一个未知                                                                   函数的高阶常系数线性微分方程。<br>        （2） 解此高阶方程<br>        （3）代入原函数</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/03/25/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cl15zpr3n0004povcfpz60p6d" data-title="高等数学" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/03/25/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" data-id="cl16a0uw90009i4vchjvy04f1" data-title="高等数学" class="article-share-link">Share</a>
       
       
       
@@ -275,61 +297,94 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="第一章-线性方程组与矩阵"><a href="#第一章-线性方程组与矩阵" class="headerlink" title="第一章 线性方程组与矩阵"></a>第一章 线性方程组与矩阵</h2><h3 id="一、定义"><a href="#一、定义" class="headerlink" title="一、定义"></a>一、定义</h3><ol start="3">
+        <h2 id="第一章-线性方程组与矩阵"><a href="#第一章-线性方程组与矩阵" class="headerlink" title="第一章 线性方程组与矩阵"></a>第一章 线性方程组与矩阵</h2><h3 id="一、定义"><a href="#一、定义" class="headerlink" title="一、定义"></a>一、定义</h3><ol>
 <li>实矩阵：元素是实数的矩阵</li>
 <li>虚矩阵：元素是虚数的矩阵</li>
 <li>零矩阵：元素全为0的矩阵</li>
 <li>系数矩阵：线性方程组的系数组成的矩阵</li>
 <li>增广矩阵：（系数矩阵+常数块）</li>
 <li>列矩阵：n x 1矩阵，常用希腊字母表示</li>
-<li>行矩阵：1 x n，元素之间用“，”隔开，且只有行矩阵使用“，”<br>&#x3D;&#x3D;注：列矩阵和行矩阵可看作列向量和行向量&#x3D;&#x3D;</li>
-<li>方阵：行数等于列数的特殊矩阵<br>下&#x2F;上三角矩阵：对角线下&#x2F;上的元素全为0<br>对角矩阵：简称对角阵，记做<strong>diag</strong><br>数量矩阵：主对角线上的元素相等的对角矩阵<br>单位矩阵：记作<strong>E</strong>，主对角线上的元素为1的数量矩阵<br>对称矩阵：**$A^T&#x3D;A$**<br>反对称矩阵：**$A^T&#x3D;-A$**</li>
+<li>行矩阵：1 x n，元素之间用“，”隔开，且只有行矩阵使用“，”<br>==注：列矩阵和行矩阵可看作列向量和行向量==</li>
+<li>方阵：行数等于列数的特殊矩阵<pre><code>下/上三角矩阵：对角线下/上的元素全为0
+对角矩阵：简称对角阵，记做**diag** 
+数量矩阵：主对角线上的元素相等的对角矩阵
+单位矩阵：记作**E**，主对角线上的元素为1的数量矩阵
+对称矩阵：**$A^T=A$**
+反对称矩阵：**$A^T=-A$**
+</code></pre></li>
 <li>同型矩阵：行数和列数相等的俩个矩阵</li>
 <li>相等矩阵：对应元素相等的同型矩阵</li>
 <li>分块矩阵：对于行数和列数较多的矩阵，用一些横线和竖线将其分为若干给小矩阵</li>
 <li>分块对角阵：A是n阶方阵，A的分块阵只有在对角线上有非零子块，且这些子块全为方阵，其余子块全为零矩阵</li>
 <li>行阶梯型矩阵：可画一条阶梯线，线下方全为0，台阶数等于非零行数，每个台阶只有一行，每一非零行的第一个非零元素位于上一 行非零元素的右侧</li>
 <li>行最简型矩阵：非零行的第一个非零元素为1，且该列只有0，1</li>
-<li>初等变换：<br>               （1）交换俩方程的次序<br>               （2）一个方程上乘非零数<br>               （3）一个方程乘非零数加到另一个方程上<br>                   &#x3D;&#x3D;注：行变换一般用r表示，列用c表示&#x3D;&#x3D;           </li>
+<li>初等变换：<pre><code>               （1）交换俩方程的次序
+               （2）一个方程上乘非零数
+               （3）一个方程乘非零数加到另一个方程上
+                   ==注：行变换一般用r表示，列用c表示==           
+</code></pre></li>
 <li>等价：经过初等运算可相互变换的俩个矩阵相互等价</li>
-<li>逆矩阵：AB&#x3D;BA&#x3D;E，则B是A的逆矩阵，记作$A^{-1}$（其中A，B为n阶方阵，E为单位矩阵）<br>             &#x3D;&#x3D;注意A的逆阵是唯一的&#x3D;&#x3D;</li>
+<li>逆矩阵：AB=BA=E，则B是A的逆矩阵，记作$A^{-1}$（其中A，B为n阶方阵，E为单位矩阵）<pre><code>             ==注意A的逆阵是唯一的==
+</code></pre></li>
 </ol>
 <h3 id="二、运算"><a href="#二、运算" class="headerlink" title="二、运算"></a>二、运算</h3><ol>
-<li><p>加法：只有同型矩阵可以相加，相加法则为对应元素相加<br>运算规律：<br>   （1）交换律：A+B&#x3D;B+A；<br>   （2）结合律：（A+B)+C&#x3D;A+(B+C);<br>   （3）A+0&#x3D;0+A&#x3D;A</p>
+<li><p>加法：只有同型矩阵可以相加，相加法则为对应元素相加</p>
+<pre><code>运算规律：
+</code></pre><p>   （1）交换律：A+B=B+A；<br>   （2）结合律：（A+B)+C=A+(B+C);<br>   （3）A+0=0+A=A</p>
 </li>
-<li><p>矩阵的数乘：常数乘矩阵，等于常数乘每个元素<br> （1）k(A+B)&#x3D;kA+kB;<br>（2）(k+l)A&#x3D;kA+lA;<br>   （3）(kl)A&#x3D;k(lA)&#x3D;l(kA);<br>（4） 1A&#x3D;A<br>  （5） (-1)A&#x3D;-A<br>  （6）0A&#x3D;$0_{m*n}$</p>
+<li><p>矩阵的数乘：常数乘矩阵，等于常数乘每个元素<br> （1）k(A+B)=kA+kB;<br>（2）(k+l)A=kA+lA;<br>   （3）(kl)A=k(lA)=l(kA);<br>（4） 1A=A<br>  （5） (-1)A=-A<br>  （6）0A=$0_{m*n}$</p>
 </li>
-<li><p>矩阵的乘法：只有当前一个矩阵的列数等于第二个矩阵的行数时，才可相乘<br>注意：<br>   （1）矩阵乘法不满足交换律，AB不等于BA；<br>   （2）若AB&#x3D;0，无法得出A&#x3D;0或B&#x3D;0的结论；<br>   （3）结合律：(AB)C&#x3D;A(BC)<br>   （4）分配律：A(B+C)&#x3D;AB+AC，(A+B)C&#x3D;AC+BC<br>   （5）（kA)B&#x3D;A(kB)&#x3D;k(AB)</p>
-<p>   （6）**$E_mA_{m<em>n}&#x3D;A_{m</em>n}E_n&#x3D;A_{m<em>n}$</em>*</p>
-<p>​    （7）**$O_{m<em>s}A_{s</em>n}&#x3D;0_{m<em>n};A_{m</em>s}O_{s<em>n}&#x3D;O_{m</em>n}$**</p>
-<p>（8）**$A^0&#x3D;E$**<br>   （9）当AB可交换时（即AB&#x3D;BA）时，                                                                                                                                        <strong>$(AB)^k&#x3D;A^kB^k,(A+B)^2&#x3D;A^2+B^2+2AB;(A+B)(A-B)&#x3D;A^2-B^2$</strong></p>
+<li><p>矩阵的乘法：只有当前一个矩阵的列数等于第二个矩阵的行数时，才可相乘</p>
+<pre><code>注意： 
+</code></pre><p>   （1）矩阵乘法不满足交换律，AB不等于BA；<br>   （2）若AB=0，无法得出A=0或B=0的结论；<br>   （3）结合律：(AB)C=A(BC)<br>   （4）分配律：A(B+C)=AB+AC，(A+B)C=AC+BC<br>   （5）（kA)B=A(kB)=k(AB)</p>
+<p>   （6）<strong>$E_mA_{m<em>n}=A_{m</em>n}E_n=A_{m*n}$</strong></p>
+<p>​    （7）<strong>$O_{m<em>s}A_{s</em>n}=0_{m<em>n};A_{m</em>s}O_{s<em>n}=O_{m</em>n}$</strong></p>
+<p>（8）<strong>$A^0=E$</strong><br>   （9）当AB可交换时（即AB=BA）时，                                                                                                                                        <strong>$(AB)^k=A^kB^k,(A+B)^2=A^2+B^2+2AB;(A+B)(A-B)=A^2-B^2$</strong></p>
 </li>
-<li><p>矩阵的转置：将矩阵的行换成列，列换成行，记作**$A^T$**<br>规律（k为常数，A与B为同型矩阵）：<br>   （1）**$(A^T)^T&#x3D;A$**<br>   （2）**$(A+B)^T&#x3D;A^T+B^T$**<br>   （3）**$(AB)^T&#x3D;B^TA^T$**<br>   （4）**$(kA)^T&#x3D;kA^T$**</p>
+<li><p>矩阵的转置：将矩阵的行换成列，列换成行，记作<strong>$A^T$</strong></p>
+<pre><code>规律（k为常数，A与B为同型矩阵）：
+</code></pre><p>   （1）<strong>$(A^T)^T=A$</strong><br>   （2）<strong>$(A+B)^T=A^T+B^T$</strong><br>   （3）<strong>$(AB)^T=B^TA^T$</strong><br>   （4）<strong>$(kA)^T=kA^T$</strong></p>
 </li>
-<li><p>分块矩阵<br>（1）分块矩阵的加减法：对应分块的行列数一致<br>（2）分块矩阵的数乘：每个元素分别相乘<br>（3）分块矩阵的乘法：前矩阵的列分块方式等于狗方块的行分块方式<br>（4）分块矩阵的倒置：各分块分别倒置</p>
-</li>
-<li><p>求解矩阵方程<strong>AX&#x3D;B,XA&#x3D;B,AXB&#x3D;C</strong><br> （1）$AX&#x3D;B&#x3D;&gt;A^{-1}AX&#x3D;A^{-1}B&#x3D;&gt;X&#x3D;A^{-1}B，则(A|B)&#x3D;&gt;(E|A^{-1}B)&#x3D;&gt;(E|X)$<br> （2）$XA&#x3D;B&#x3D;&gt;XAA^{-1}&#x3D;BA^{-1}&#x3D;&gt;X&#x3D;BA^{-1}&#x3D;&gt;X^T&#x3D;(A^{-1})^TB^T，则(A^T|B^T)&#x3D;&gt;(E|(A^{-1})^TB^T)&#x3D;&gt;(E|X)$<br> （3）$AXB同理，先进行（1）运算，再进行（2）运算$</p>
+<li><p>分块矩阵</p>
+<pre><code>（1）分块矩阵的加减法：对应分块的行列数一致
+（2）分块矩阵的数乘：每个元素分别相乘
+（3）分块矩阵的乘法：前矩阵的列分块方式等于狗方块的行分块方式
+（4）分块矩阵的倒置：各分块分别倒置
+</code></pre></li>
+<li><p>求解矩阵方程<strong>AX=B,XA=B,AXB=C</strong> </p>
+<pre><code> （1）$AX=B=&gt;A^&#123;-1&#125;AX=A^&#123;-1&#125;B=&gt;X=A^&#123;-1&#125;B，则(A|B)=&gt;(E|A^&#123;-1&#125;B)=&gt;(E|X)$
+ （2）$XA=B=&gt;XAA^&#123;-1&#125;=BA^&#123;-1&#125;=&gt;X=BA^&#123;-1&#125;=&gt;X^T=(A^&#123;-1&#125;)^TB^T，则(A^T|B^T)=&gt;(E|(A^&#123;-1&#125;)^TB^T)=&gt;(E|X)$       
+</code></pre><p> （3）$AXB同理，先进行（1）运算，再进行（2）运算$</p>
 </li>
 </ol>
 <h3 id="三、性质"><a href="#三、性质" class="headerlink" title="三、性质"></a>三、性质</h3><ol>
-<li><p>矩阵的等价<br>（1）自反性：任意矩阵与自身等价<br>（2）对称性：若A与B对称，则B与A对称<br>（3）传递性：若A与B对称，且B与C对称，则A与C对称</p>
-</li>
-<li><p>逆矩阵的性质<br>（1）若A可逆，则$A^{-1}$也可逆且$(A^{-1})^{-1}&#x3D;A$<br>（2）若$A,A_1,A_2,\cdots,A_s$都可逆，则他们的乘积也可逆，$(AA_2A_3\cdots A_s)^{-1}&#x3D;A^{-1}A_2^{-1}A_3^{-1}\cdots A_s^{-1}$<br>（3）若A可逆且数$k\neq0$，则$kA$也可逆且$(kA)^{-1}&#x3D;k^{-1}A^{-1}$</p>
-</li>
+<li><p>矩阵的等价</p>
+<pre><code>（1）自反性：任意矩阵与自身等价
+（2）对称性：若A与B对称，则B与A对称
+（3）传递性：若A与B对称，且B与C对称，则A与C对称
+</code></pre></li>
+<li><p>逆矩阵的性质</p>
+<pre><code>（1）若A可逆，则$A^&#123;-1&#125;$也可逆且$(A^&#123;-1&#125;)^&#123;-1&#125;=A$
+（2）若$A,A_1,A_2,\cdots,A_s$都可逆，则他们的乘积也可逆，$(AA_2A_3\cdots A_s)^&#123;-1&#125;=A^&#123;-1&#125;A_2^&#123;-1&#125;A_3^&#123;-1&#125;\cdots A_s^&#123;-1&#125;$
+（3）若A可逆且数$k\neq0$，则$kA$也可逆且$(kA)^&#123;-1&#125;=k^&#123;-1&#125;A^&#123;-1&#125;$
+</code></pre></li>
 <li><p>初等矩阵都是可逆的，且初等矩阵的逆矩阵也是同一类型的逆矩阵。</p>
 </li>
-<li><p>&#x3D;&#x3D;设A是一个mxn的矩阵，对A施行行变换，相当于在A的左边乘相应的m阶初等方阵；对A施行列变换，相当于在A的右侧乘相应的n阶初等方阵。（相应的初等方阵就是单位矩阵做对应的行列变换）&#x3D;&#x3D;</p>
-<p>注：在进行列运算时，可以通过倒置将列运算转换为行运算$(AB)^T&#x3D;B^TA^T$，</p>
+<li><p>==设A是一个mxn的矩阵，对A施行行变换，相当于在A的左边乘相应的m阶初等方阵；对A施行列变换，相当于在A的右侧乘相应的n阶初等方阵。（相应的初等方阵就是单位矩阵做对应的行列变换）==</p>
+<p>注：在进行列运算时，可以通过倒置将列运算转换为行运算$(AB)^T=B^TA^T$，</p>
 </li>
 </ol>
 <h3 id="四、定理"><a href="#四、定理" class="headerlink" title="四、定理"></a>四、定理</h3><ol>
-<li><p>初等变换：<br>（1）任意一个$m<em>n$的矩阵可以进过若干次初等行变换变换为行阶梯形矩阵<br>（2）任意一个$m</em>n$的矩阵可以进过若干次初等变换变换为行最简形矩阵<br>（3）任意一个$m*n$的矩阵可以进过若干次初等行变换变换为标准型</p>
-</li>
+<li><p>初等变换：</p>
+<pre><code>（1）任意一个$m*n$的矩阵可以进过若干次初等行变换变换为行阶梯形矩阵
+（2）任意一个$m*n$的矩阵可以进过若干次初等变换变换为行最简形矩阵
+（3）任意一个$m*n$的矩阵可以进过若干次初等行变换变换为标准型
+</code></pre></li>
 <li><p>线性方程组的解的充分必要性：<br>线性方程组有解：第一个非零元不出现在最后一列<br>线性方程组有唯一解：第一个非零元不出现在最后一列，且第一个非零元的个数等于未知数的个数<br>线性方程有无穷多个解：第一个非零元不出现在最后一列，且第一个非零元的个数少于未知数的个数</p>
 </li>
 <li><p>初等矩阵与逆矩阵的应用：<br>n阶方阵A可逆 ~ 方阵A行等价于n阶单位矩阵 ~ 方阵A可表示为一些初等方阵的乘积，三者是等价关系。</p>
 <p><img src="C:\Users\chen\AppData\Roaming\Typora\typora-user-images\image-20220322111046619.png" alt="image-20220322111046619"></p>
-<p>​    &#x3D;&#x3D;<strong>则：</strong>$P(A|E)&#x3D;(PA|PE)&#x3D;(E|P)&#x3D;(E|A^{-1})$&#x3D;&#x3D; </p>
+<p>​    ==<strong>则：</strong>$P(A|E)=(PA|PE)=(E|P)=(E|A^{-1})$== </p>
 </li>
 <li><p>任意一个$m*n$矩阵A均存在一个m阶可逆方阵P和n阶可逆方阵Q，使得PAQ为标准形式F</p>
 </li>
@@ -338,7 +393,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/03/24/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cl15zpr3j0001povcamxdgijc" data-title="线性代数" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/03/24/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-id="cl16a0uw40003i4vce3c8dtc1" data-title="线性代数" class="article-share-link">Share</a>
       
       
       
@@ -377,20 +432,16 @@
         <h1 id="BSP封装"><a href="#BSP封装" class="headerlink" title="BSP封装"></a>BSP封装</h1><h2 id="什么是BSP"><a href="#什么是BSP" class="headerlink" title="什么是BSP"></a>什么是BSP</h2><p>​        板级支持包(BSP)可以用来构建主板硬件的所有软件资源，可以用来初始化与运作操作系统的简易代码。在RM中，BSP可以理解为是一个封装了外设底层代码和初级逻辑的函数，在进行程序逻辑编写时，可以仅使用编写好的BSP来完成逻辑，不再需要操作底盘。通俗来说，对于cube生成的代码，如果BSP封装后的逻辑中不出现hal库函数，则达到BSP目的之一。如若写一个好的BSP则需要注意代码的抑制性。</p>
 <h2 id="实例（can外设的bsp）"><a href="#实例（can外设的bsp）" class="headerlink" title="实例（can外设的bsp）"></a>实例（can外设的bsp）</h2><h3 id="一、命名规则"><a href="#一、命名规则" class="headerlink" title="一、命名规则"></a>一、命名规则</h3><p>​        bsp_外设名.后缀</p>
 <h3 id="二、封装步骤"><a href="#二、封装步骤" class="headerlink" title="二、封装步骤"></a>二、封装步骤</h3><h4 id="1-准备：先新建俩个文件，-c和-h，在头文件里需调用芯片"><a href="#1-准备：先新建俩个文件，-c和-h，在头文件里需调用芯片" class="headerlink" title="1. 准备：先新建俩个文件，.c和.h，在头文件里需调用芯片"></a>1. 准备：先新建俩个文件，.c和.h，在头文件里需调用芯片</h4><pre><code> <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> BSP_CAN_H</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BSP_CAN_H</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;stm32f4xx.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure>
-</code></pre>
-<h4 id="2-在源文件中封装函数，并将函数名及其注释写到头文件里方便查阅"><a href="#2-在源文件中封装函数，并将函数名及其注释写到头文件里方便查阅" class="headerlink" title="2. 在源文件中封装函数，并将函数名及其注释写到头文件里方便查阅"></a>2. 在源文件中封装函数，并将函数名及其注释写到头文件里方便查阅</h4><pre><code> <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">     <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 初始化集合</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">     <span class="type">void</span> <span class="title function_">CAN_Init</span><span class="params">(<span class="type">void</span>)</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">​     </span><br><span class="line">​     <span class="comment">/**</span></span><br><span class="line"><span class="comment">​      * 发送电流函数</span></span><br><span class="line"><span class="comment">​      */</span></span><br><span class="line">​     voidCAN_Sendcurrnt(CAN_HandleTypeDef*hcan,</span><br><span class="line">​     int16_tid,int16_tcurrent);</span><br><span class="line">​     ```</span><br><span class="line">### 三、函数编写</span><br><span class="line">#### <span class="number">3.1</span>初始化函数 CAN_INIT</span><br><span class="line"></span><br><span class="line">		驱动电机时需要接收电机返回的数据，而所有外设返回的信息都是从can总线上返回的，为了得到所需的数据，需设置过滤器来获得所需的数据，然后掉用can configfilter，canstart，等初始化函数，完成can外设的初始化，并定义</span><br><span class="line"></span><br><span class="line">   ```c</span><br><span class="line">   CAN_FilterTypeDef can_filter_st;</span><br><span class="line">   can_filter_st.FilterActivation = ENABLE;</span><br><span class="line">   can_filter_st.FilterMode=CAN_FILTERMODE_IDMAS;</span><br><span class="line">   can_filter_st.FilterScale=CAN_FILTERSCALE_32B;</span><br><span class="line">   can_filter_st.FilterIdHigh = <span class="number">0x0000</span>;</span><br><span class="line">   can_filter_st.FilterIdLow = <span class="number">0x0000</span>;</span><br><span class="line">   can_filter_st.FilterMaskIdHigh = <span class="number">0x0000</span>;</span><br><span class="line">   can_filter_st.FilterMaskIdLow = <span class="number">0x0000</span>;</span><br><span class="line">   can_filter_st.FilterBank = <span class="number">0</span>;</span><br><span class="line">   can_filter_st.FilterFIFOAssignment=CAN_RX_FIF;</span><br><span class="line">   HAL_CAN_ConfigFilter(&amp;hcan1, &amp;can_filter_st);</span><br><span class="line">   HAL_CAN_Start(&amp;hcan1);</span><br><span class="line">   HAL_CAN_ActivateNotification(&amp;hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);</span><br><span class="line">   can_filter_st.SlaveStartFilterBank = <span class="number">14</span>;</span><br><span class="line">   can_filter_st.FilterBank = <span class="number">14</span>;       <span class="comment">//chassis_tx_message.StdId=CAN_CHASSIS_ALL_I;</span></span><br><span class="line">   <span class="comment">// chassis_tx_message.IDE = CAN_ID_STD;</span></span><br><span class="line">   <span class="comment">// chassis_tx_message.RTR = CAN_RTR_DATA;</span></span><br><span class="line">   <span class="comment">// chassis_tx_message.DLC = 0x08; </span></span><br></pre></td></tr></table></figure>
-</code></pre>
-<h4 id="3-2回调函数的数据HAL-CAN-RxFifo0MsgPendingCallback"><a href="#3-2回调函数的数据HAL-CAN-RxFifo0MsgPendingCallback" class="headerlink" title="3.2回调函数的数据HAL_CAN_RxFifo0MsgPendingCallback"></a>3.2回调函数的数据HAL_CAN_RxFifo0MsgPendingCallback</h4><p>​        返回的数据可以类比为一个分为头和尾的数据块，头里写着电调id，数据长度等数据；尾里写着实际的数据，故需要将数据进行分析区别，放入对应的地方进行需要的计算。</p>
+</code></pre><h4 id="2-在源文件中封装函数，并将函数名及其注释写到头文件里方便查阅"><a href="#2-在源文件中封装函数，并将函数名及其注释写到头文件里方便查阅" class="headerlink" title="2. 在源文件中封装函数，并将函数名及其注释写到头文件里方便查阅"></a>2. 在源文件中封装函数，并将函数名及其注释写到头文件里方便查阅</h4><pre><code> <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">     <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 初始化集合</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">     <span class="type">void</span> <span class="title function_">CAN_Init</span><span class="params">(<span class="type">void</span>)</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">​     </span><br><span class="line">​     <span class="comment">/**</span></span><br><span class="line"><span class="comment">​      * 发送电流函数</span></span><br><span class="line"><span class="comment">​      */</span></span><br><span class="line">​     voidCAN_Sendcurrnt(CAN_HandleTypeDef*hcan,</span><br><span class="line">​     int16_tid,int16_tcurrent);</span><br><span class="line">​     ```</span><br><span class="line">### 三、函数编写</span><br><span class="line">#### <span class="number">3.1</span>初始化函数 CAN_INIT</span><br><span class="line"></span><br><span class="line">		驱动电机时需要接收电机返回的数据，而所有外设返回的信息都是从can总线上返回的，为了得到所需的数据，需设置过滤器来获得所需的数据，然后掉用can configfilter，canstart，等初始化函数，完成can外设的初始化，并定义</span><br><span class="line"></span><br><span class="line">   ```c</span><br><span class="line">   CAN_FilterTypeDef can_filter_st;</span><br><span class="line">   can_filter_st.FilterActivation = ENABLE;</span><br><span class="line">   can_filter_st.FilterMode=CAN_FILTERMODE_IDMAS;</span><br><span class="line">   can_filter_st.FilterScale=CAN_FILTERSCALE_32B;</span><br><span class="line">   can_filter_st.FilterIdHigh = <span class="number">0x0000</span>;</span><br><span class="line">   can_filter_st.FilterIdLow = <span class="number">0x0000</span>;</span><br><span class="line">   can_filter_st.FilterMaskIdHigh = <span class="number">0x0000</span>;</span><br><span class="line">   can_filter_st.FilterMaskIdLow = <span class="number">0x0000</span>;</span><br><span class="line">   can_filter_st.FilterBank = <span class="number">0</span>;</span><br><span class="line">   can_filter_st.FilterFIFOAssignment=CAN_RX_FIF;</span><br><span class="line">   HAL_CAN_ConfigFilter(&amp;hcan1, &amp;can_filter_st);</span><br><span class="line">   HAL_CAN_Start(&amp;hcan1);</span><br><span class="line">   HAL_CAN_ActivateNotification(&amp;hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);</span><br><span class="line">   can_filter_st.SlaveStartFilterBank = <span class="number">14</span>;</span><br><span class="line">   can_filter_st.FilterBank = <span class="number">14</span>;       <span class="comment">//chassis_tx_message.StdId=CAN_CHASSIS_ALL_I;</span></span><br><span class="line">   <span class="comment">// chassis_tx_message.IDE = CAN_ID_STD;</span></span><br><span class="line">   <span class="comment">// chassis_tx_message.RTR = CAN_RTR_DATA;</span></span><br><span class="line">   <span class="comment">// chassis_tx_message.DLC = 0x08; </span></span><br></pre></td></tr></table></figure>
+</code></pre><h4 id="3-2回调函数的数据HAL-CAN-RxFifo0MsgPendingCallback"><a href="#3-2回调函数的数据HAL-CAN-RxFifo0MsgPendingCallback" class="headerlink" title="3.2回调函数的数据HAL_CAN_RxFifo0MsgPendingCallback"></a>3.2回调函数的数据HAL_CAN_RxFifo0MsgPendingCallback</h4><p>​        返回的数据可以类比为一个分为头和尾的数据块，头里写着电调id，数据长度等数据；尾里写着实际的数据，故需要将数据进行分析区别，放入对应的地方进行需要的计算。</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 回调函数的数据分析</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">HAL_CAN_RxFifo0MsgPendingCallback</span><span class="params">(CAN_HandleTypeDef *hcan)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> speed;</span><br><span class="line">    CAN_RxHeaderTypeDef rx_header;</span><br><span class="line"></span><br><span class="line">    HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &amp;rx_header, rx_data);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">switch</span> (rx_header.StdId)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">case</span> CAN_3508_M1_ID:</span><br><span class="line">        <span class="keyword">case</span> CAN_3508_M2_ID:</span><br><span class="line">        <span class="keyword">case</span> CAN_3508_M3_ID:</span><br><span class="line">        <span class="keyword">case</span> CAN_3508_M4_ID:</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">static</span> <span class="type">uint8_t</span> i = <span class="number">0</span>;</span><br><span class="line">            <span class="comment">//get motor id</span></span><br><span class="line">            i = rx_header.StdId - CAN_3508_M1_ID;</span><br><span class="line">            get_motor_measure(&amp;motor_chassis[i], rx_data);</span><br><span class="line">            speed=motor_chassis[i].speed_rpm/<span class="number">60.0</span>/<span class="number">19.0</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <h4 id="3-3发送电流函数CAN-Sendcurrnt"><a href="#3-3发送电流函数CAN-Sendcurrnt" class="headerlink" title="3.3发送电流函数CAN_Sendcurrnt"></a>3.3发送电流函数CAN_Sendcurrnt</h4><p>​        给电机发数据时要查阅电调id，明白所需发送什么样的电流，此处需要调用hal库的HAL_CAN_AddTxMessage函数，故根据此函数所需的参数编写所需的数组和结构体。</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 发送电流函数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">CAN_Sendcurrnt</span><span class="params">(CAN_HandleTypeDef *hcan,<span class="type">int16_t</span> id,<span class="type">int16_t</span> current)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint8_t</span> data[<span class="number">8</span>];</span><br><span class="line">    <span class="keyword">if</span>(id&lt;=<span class="number">4</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">switch</span> (id)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">1</span>):</span><br><span class="line">                data[<span class="number">0</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">1</span>] = current;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">2</span>):</span><br><span class="line">                data[<span class="number">2</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">3</span>] = current;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">3</span>):</span><br><span class="line">                data[<span class="number">4</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">5</span>] = current;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">4</span>):</span><br><span class="line">                data[<span class="number">6</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">7</span>] = current;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        CAN_TxHeaderTypeDef chassis_tx_message;</span><br><span class="line">        chassis_tx_message.DLC = <span class="number">0x08</span>;</span><br><span class="line">        chassis_tx_message.IDE = CAN_ID_STD;</span><br><span class="line">        chassis_tx_message.StdId = <span class="number">0X200</span>;</span><br><span class="line">        chassis_tx_message.RTR = CAN_RTR_DATA;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        HAL_CAN_AddTxMessage(hcan,&amp;chassis_tx_message,data, &amp;transmitmailbox);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">switch</span> (id)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">5</span>):</span><br><span class="line">                data[<span class="number">0</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">1</span>] = current;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">6</span>):</span><br><span class="line">                data[<span class="number">2</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">3</span>] = current;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">7</span>):</span><br><span class="line">                data[<span class="number">4</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">5</span>] = current;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span>(<span class="number">8</span>):</span><br><span class="line">                data[<span class="number">6</span>] = current &gt;&gt; <span class="number">8</span>;</span><br><span class="line">                data[<span class="number">7</span>] = current;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        CAN_TxHeaderTypeDef chassis_tx_message;</span><br><span class="line">        chassis_tx_message.DLC = <span class="number">8</span>;</span><br><span class="line">        chassis_tx_message.IDE = CAN_ID_STD;</span><br><span class="line">        chassis_tx_message.StdId = <span class="number">0X1FF</span>;</span><br><span class="line">        chassis_tx_message.RTR = CAN_RTR_DATA;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        HAL_CAN_AddTxMessage(hcan,&amp;chassis_tx_message,data, &amp;transmitmailbox);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/03/15/BSP%E5%B0%81%E8%A3%85/" data-id="cl15zpr3g0000povc0wcnhpf4" data-title="BSP封装" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/03/15/BSP%E5%B0%81%E8%A3%85/" data-id="cl16a0uvx0000i4vcc8ya3ih7" data-title="BSP封装" class="article-share-link">Share</a>
       
       
       
@@ -426,7 +477,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="RM电机的驱动"><a href="#RM电机的驱动" class="headerlink" title="RM电机的驱动"></a>RM电机的驱动</h1><p>注：取自<a target="_blank" rel="noopener" href="http://www.houenup.com/">www.houenup.com</a></p>
+        <h1 id="RM电机的驱动"><a href="#RM电机的驱动" class="headerlink" title="RM电机的驱动"></a>RM电机的驱动</h1><p>注：取自www.houenup.com</p>
 <h2 id="1-硬件"><a href="#1-硬件" class="headerlink" title="1.硬件"></a>1.硬件</h2><h3 id="1-1-电机"><a href="#1-1-电机" class="headerlink" title="1.1 电机"></a>1.1 电机</h3><p>RM有很多不同型号的电机，不同型号的电机有它不同的用途，但是以用途分类的话主要是分成两种电机：</p>
 <ol>
 <li><p><strong>用来精准控制位置的电机，在RM中的主要是云台电机。</strong></p>
@@ -474,7 +525,7 @@
 <p>经过前人的经验总结：分别设置成3 、10、3的时候正好可以成1Mhz，但是不能直接按顺序设置，因为如果预分频系数设置成3，BS1段是不允许设置成10的，因此要先将预分频系数调大，然后调BS1和BS2段最后再将分频设置成3.</p>
 <p><img src="https://www.houenup.com/wp-content/uploads/2022/03/image-20220301174813064.png" alt="RM电机的驱动"></p>
 <h6 id="波特率计算知识点："><a href="#波特率计算知识点：" class="headerlink" title="波特率计算知识点："></a>波特率计算知识点：</h6><p><img src="https://www.houenup.com/wp-content/uploads/2022/03/image-20220302002744724.png" alt="RM电机的驱动"></p>
-<h4 id="2-1-5-生成文件"><a href="#2-1-5-生成文件" class="headerlink" title="2.1.5 生成文件"></a>2.1.5 生成文件</h4><h5 id="2-1-5-1-生成成对的-c-x2F-h文件"><a href="#2-1-5-1-生成成对的-c-x2F-h文件" class="headerlink" title="2.1.5.1 生成成对的.c&#x2F;.h文件"></a>2.1.5.1 生成成对的.c&#x2F;.h文件</h5><p><img src="https://www.houenup.com/wp-content/uploads/2022/03/image-20220301172530677.png" alt="RM电机的驱动"></p>
+<h4 id="2-1-5-生成文件"><a href="#2-1-5-生成文件" class="headerlink" title="2.1.5 生成文件"></a>2.1.5 生成文件</h4><h5 id="2-1-5-1-生成成对的-c-h文件"><a href="#2-1-5-1-生成成对的-c-h文件" class="headerlink" title="2.1.5.1 生成成对的.c/.h文件"></a>2.1.5.1 生成成对的.c/.h文件</h5><p><img src="https://www.houenup.com/wp-content/uploads/2022/03/image-20220301172530677.png" alt="RM电机的驱动"></p>
 <h5 id="2-1-5-2-配置使用clion-IDE-打开"><a href="#2-1-5-2-配置使用clion-IDE-打开" class="headerlink" title="2.1.5.2 配置使用clion IDE 打开"></a>2.1.5.2 配置使用clion IDE 打开</h5><p><img src="https://www.houenup.com/wp-content/uploads/2022/03/image-20220301172619248.png" alt="RM电机的驱动"></p>
 <p>之后生成代码即可</p>
 <p>在生成好文件后选择打开文件夹(Open Folder)，而不是直接打开工程(Open Project),否则它会不知道用什么打开</p>
@@ -483,7 +534,6 @@
 <p><img src="https://www.houenup.com/wp-content/uploads/2022/03/image-20220301172902751.png" alt="RM电机的驱动"></p>
 <p><img src="https://www.houenup.com/wp-content/uploads/2022/03/image-2022030117300085-300x86.png" alt="RM电机的驱动"></p>
 <h3 id="2-2-代码部分配置"><a href="#2-2-代码部分配置" class="headerlink" title="2.2 代码部分配置"></a>2.2 代码部分配置</h3><h4 id="2-2-1-接收过滤器配置"><a href="#2-2-1-接收过滤器配置" class="headerlink" title="2.2.1 接收过滤器配置"></a>2.2.1 接收过滤器配置</h4><h5 id="2-2-1-1-配置代码"><a href="#2-2-1-1-配置代码" class="headerlink" title="2.2.1.1 配置代码"></a>2.2.1.1 配置代码</h5><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">CAN_FilterTypeDef</span> can_filter_st;                    <span class="comment">//实例化一个can接收过滤器</span></span><br><span class="line">can_filter_st.FilterBank = <span class="number">0</span>;                       <span class="comment">//选择过滤器0</span></span><br><span class="line">can_filter_st.FilterActivation = ENABLE;            <span class="comment">//开启该过滤器</span></span><br><span class="line">can_filter_st.FilterMode = <span class="built_in">CAN_FILTERMODE_IDMASK</span>;   <span class="comment">//筛选器模式是ID掩码模式</span></span><br><span class="line">can_filter_st.FilterScale = <span class="built_in">CAN_FILTERSCALE_32BIT</span>;  <span class="comment">//筛选器位宽</span></span><br><span class="line">can_filter_st.FilterIdHigh = <span class="number">0x0000</span>;                </span><br><span class="line">can_filter_st.FilterIdLow = <span class="number">0x0000</span>;</span><br><span class="line">can_filter_st.FilterMaskIdHigh = <span class="number">0x0000</span>;</span><br><span class="line">can_filter_st.FilterMaskIdLow = <span class="number">0x0000</span>;</span><br><span class="line">can_filter_st.FilterFIFOAssignment = <span class="built_in">CAN_RX_FIFO0</span>   <span class="comment">//把接收到的报文放入到FIFO0中</span></span><br><span class="line">HAL_CAN_ConfigFilter(&amp;hcan1, &amp;can_filter_st);       <span class="comment">//把过滤器配置配置给can1外设                       </span></span><br></pre></td></tr></table></figure>
-
 <h5 id="2-2-1-2-相关知识点"><a href="#2-2-1-2-相关知识点" class="headerlink" title="2.2.1.2 相关知识点"></a>2.2.1.2 相关知识点</h5><h6 id="接收中断："><a href="#接收中断：" class="headerlink" title="接收中断："></a>接收中断：</h6><p>一旦往FIFO存入一个报文，硬件就会更新FMP[1:0]位，并且如果CAN_IER寄存器的FMPIE位为’1’，那么就会产生一个中断请求。 当FIFO 变 满 时( 即 第3 个 报 文 被 存 入) ， CAN_RFR 寄 存 器 的FULL 位 就 被 置’1’ ， 并 且 如 果CAN_IER寄存器的FFIE位为’1’，那么就会产生一个满中断请求。 在溢出的情况下， FOVR位被置’1’，并且如果CAN_IER寄存器的FOVIE位为’1’，那么就会产生一个溢出中断请求。</p>
 <h6 id="接收FIFO"><a href="#接收FIFO" class="headerlink" title="接收FIFO:"></a>接收FIFO:</h6><p> CAN外设一共有2个接收FIFO,每个FIFO中有3个邮箱，即最多可以缓存6个接收到的报文。当接收到报文时，FIFO的报文计数器会自增，而STM32内部读取FIFO数据后，报文计数器会自减，通过状态寄存器可获知报文计数器的值</p>
 <blockquote>
@@ -491,14 +541,14 @@
 </blockquote>
 <h6 id="验收筛选器："><a href="#验收筛选器：" class="headerlink" title="验收筛选器："></a>验收筛选器：</h6><p> 在CAN协议中，消息的标识符与节点地址无关，但与消息内容有关。因此，发送节点将报文广播给所有接收器时，接收节点会根据报文标识符的值来确定软件是否需要该消息，为了简化软件的工作，<strong>STM32的CAN外设接收报文前会先使用验收筛选器检查，只接收需要的报文到FIFO中</strong>，筛选器工作的时候，可以调整筛选ID的长度及过滤模式。根据过滤方法分为<strong>标识符列表模式</strong>、<strong>掩码模式</strong></p>
 <h6 id="筛选器模式："><a href="#筛选器模式：" class="headerlink" title="筛选器模式："></a>筛选器模式：</h6><ol>
-<li>标志符列表模式：</li>
+<li><p>标志符列表模式：</p>
+<p>它把要接收的报文的ID列成一个表，要求报文ID与列表中的某一个标识符完全相同才可以接收，可以理解为白名单</p>
+<p><strong>标识符列表模式下，CAN_FxR1 和 CAN_FxR2中都是要匹配的标识符，收到的帧的标识符必须与其中一个吻合才能通过过滤</strong></p>
+</li>
+<li><p>掩码模式：</p>
+<p>它把可接收报文ID的某几位作为列表，这几位称为掩码，可以把它理解成关键字搜索，只要掩码（关键字相同），就符合要求，报文就会被保存到接收FIFO。</p>
+</li>
 </ol>
-<p> 它把要接收的报文的ID列成一个表，要求报文ID与列表中的某一个标识符完全相同才可以接收，可以理解为白名单</p>
-<p> <strong>标识符列表模式下，CAN_FxR1 和 CAN_FxR2中都是要匹配的标识符，收到的帧的标识符必须与其中一个吻合才能通过过滤</strong></p>
-<ol>
-<li>掩码模式：</li>
-</ol>
-<p> 它把可接收报文ID的某几位作为列表，这几位称为掩码，可以把它理解成关键字搜索，只要掩码（关键字相同），就符合要求，报文就会被保存到接收FIFO。</p>
 <p><strong>掩码模式下，那个填写掩码的寄存器与想要筛出来的ID一位一位地对应 ，那个想要筛出来的ID寄存器就填写对应位想要的数，然后掩码寄存器对应的位填写是否需要一致（如果想要该位与需要该位筛选出来的ID的数值相同，则需要在该位的掩码上写上1，不需要相同则写上0即可）</strong></p>
 <p><img src="https://www.houenup.com/wp-content/uploads/2022/03/image-20220113221013384.png" alt="RM电机的驱动"></p>
 <blockquote>
@@ -507,21 +557,16 @@
 <p>1.在32位的屏蔽位模式下： 有1个过滤器。 FxR2用于指定需要关心哪些位，FxR1用于指定这些位的标准值。 2.在32位的列表模式下： 有两个过滤器。 FxR1指定过滤器0的标准值，收到报文的标识符只有跟 FxR1完全相同时，才算通过。 FxR2指定过滤器1的标准值。 3.在16位的屏蔽位模式下： 有2个过滤器。 FxR1配置过滤器0，其中，[31-16]位指定要关心的位，[15-0]位指定这些位的标准值。 FxR2配置过滤器1，其中，[31-16]位指定要关心的位，[15-0]位指定这些位的标准值。 4.在16位的列表模式下： 有4个过滤器。 FxR1的[15-0]位配置过滤器0，FxR1的[31-16]位配置过滤器1。 FxR2的[15-0]位配置过滤器2，FxR2的[31-16]位配置过滤器3。</p>
 </blockquote>
 <h4 id="2-2-2-开启对应can外设"><a href="#2-2-2-开启对应can外设" class="headerlink" title="2.2.2 开启对应can外设"></a>2.2.2 开启对应can外设</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">HAL_CAN_Start</span>(&amp;hcan1);      <span class="comment">//开启can1</span></span><br></pre></td></tr></table></figure>
-
 <h4 id="2-2-3-开启接收中断"><a href="#2-2-3-开启接收中断" class="headerlink" title="2.2.3 开启接收中断"></a>2.2.3 开启接收中断</h4><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">HAL_CAN_ActivateNotification(&amp;hcan1, <span class="built_in">CAN_IT_RX_FIFO0_MSG_PENDING</span>);</span><br><span class="line"><span class="built_in">CAN_IT_RX_FIFO0_MSG_PENDING</span>：当FIFO0中有消息的时候进入中断。</span><br></pre></td></tr></table></figure>
-
 <p>可以看出CAN_IT_RX_FIFO0_MSG_PENDING中的FIFO0和我们配置过滤器时的报文存放位置式相对应的。</p>
 <blockquote>
-<p>can_filter_st.FilterFIFOAssignment &#x3D; CAN_RX_FIFO0 &#x2F;&#x2F;把接收到的报文放入到FIFO0中</p>
+<p>can_filter_st.FilterFIFOAssignment = CAN_RX_FIFO0 //把接收到的报文放入到FIFO0中</p>
 </blockquote>
 <h4 id="2-2-4-在接收中断中获取并解析数据"><a href="#2-2-4-在接收中断中获取并解析数据" class="headerlink" title="2.2.4 在接收中断中获取并解析数据"></a>2.2.4 在接收中断中获取并解析数据</h4><h5 id="2-2-4-1-重定义can接收中断回调函数"><a href="#2-2-4-1-重定义can接收中断回调函数" class="headerlink" title="2.2.4.1 重定义can接收中断回调函数"></a>2.2.4.1 重定义can接收中断回调函数</h5><p>can中断回调函数是弱定义，我们在任意一个地方重写中断回调函数，并在其中进行对数据的操作。</p>
 <p>can接收的中断回调函数是</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">HAL_CAN_RxFifo0MsgPendingCallback</span><span class="params">(CAN_HandleTypeDef *hcan)</span></span><br></pre></td></tr></table></figure>
-
 <h5 id="2-2-4-2-接收报文结构体"><a href="#2-2-4-2-接收报文结构体" class="headerlink" title="2.2.4.2 接收报文结构体"></a>2.2.4.2 接收报文结构体</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="type">uint32_t</span> StdId;               <span class="comment">//存储了报文的标准标识符 11位</span></span><br><span class="line"> </span><br><span class="line">  <span class="type">uint32_t</span> ExtId;               <span class="comment">//存储了报文的扩展标识符 29位</span></span><br><span class="line"> </span><br><span class="line">  <span class="type">uint32_t</span> IDE;                 <span class="comment">//存储了IDE扩展标志     </span></span><br><span class="line"> </span><br><span class="line">  <span class="type">uint32_t</span> RTR;                 <span class="comment">//存储了RTR远程帧标志</span></span><br><span class="line"> </span><br><span class="line">  <span class="type">uint32_t</span> DLC;                 <span class="comment">//存储了报文数据段的长度，0-8</span></span><br><span class="line"> </span><br><span class="line">  <span class="type">uint32_t</span> Timestamp;           <span class="comment">//时间戳   </span></span><br><span class="line"> </span><br><span class="line">  <span class="type">uint32_t</span> FilterMatchIndex;    </span><br><span class="line"> </span><br><span class="line">&#125; CAN_RxHeaderTypeDef;</span><br></pre></td></tr></table></figure>
-
 <h5 id="2-2-4-3-接收函数"><a href="#2-2-4-3-接收函数" class="headerlink" title="2.2.4.3 接收函数"></a>2.2.4.3 接收函数</h5><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">HAL_StatusTypeDef HAL_CAN_GetRxMessage(<span class="built_in">CAN_HandleTypeDef</span> *hcan, uint32_t RxFifo, <span class="built_in">CAN_RxHeaderTypeDef</span> *pHeader, uint8_t aData[])</span><br><span class="line">作用：从Rx FIFO收取一个can帧</span><br><span class="line">hcan：<span class="built_in">CAN</span>句柄指针<span class="number">2</span></span><br><span class="line">Rx FIFO：从哪个FIFO中取。可填 <span class="built_in">CAN_RX_FIFO0</span>， <span class="built_in">CAN_RX_FIFO1</span></span><br><span class="line">*pHeader：接收报文定义结构体的指针</span><br><span class="line">aData[]：接收数据域的指针</span><br></pre></td></tr></table></figure>
-
 <p>接收函数的作用就是从对应的FIFO中收取一帧can数据，然后把Can数据解剖，然后把对应的部分放在我们<strong>事先实例化好</strong>的接收结构体中，其中最主要的就是DATA部分。</p>
 <p>因为can总线上只要有信号通过过滤器进入fifo那么就会进入接收中断，如果can总线上挂载的数据多了，我们就需要根据他们发过来的报文中的ID来分别他们是谁，并通过判断语句进行对应的操作。</p>
 <h5 id="2-2-4-4-解析数据"><a href="#2-2-4-4-解析数据" class="headerlink" title="2.2.4.4 解析数据"></a>2.2.4.4 解析数据</h5><p>所谓数据的解析，就是从接收函数填充好的接收结构体中拿出我们需要知道的信息，然后读懂DATA中的数据的意思（包括转子位置、转速等信息）。而填充给结构体的数据是电调发过来的，这一帧数据是怎样存放的，电调自己是有一套报文格式的，我们可以通过这个格式来解析对应的信息。</p>
@@ -532,7 +577,6 @@
 <p>通过查阅手册，我们了解到<strong>如何通过标识符来判断这是哪个电机发来的信息</strong>、<strong>如何在DATA中解析到我们想要的数据</strong></p>
 <p>我们可以定义一个结构体，每当我们解析数据的时候，直接把对应的data中的数据解析出来存放到对应的实例化好的结构体中。 解析的过程也可以定义一个函数来处理。</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">结构体定义：</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint16_t</span> ecd;</span><br><span class="line">    <span class="type">int16_t</span> speed_rpm;</span><br><span class="line">    <span class="type">int16_t</span> given_current;</span><br><span class="line">    <span class="type">uint8_t</span> temperate;</span><br><span class="line">    <span class="type">int16_t</span> last_ecd;</span><br><span class="line">&#125; <span class="type">motor_measure_t</span>;</span><br><span class="line"> </span><br><span class="line">解析函数：</span><br><span class="line"><span class="built_in">get_motor_measure</span>(ptr, data)               </span><br><span class="line">&#123;</span><br><span class="line">     (ptr)-&gt;last_ecd = (ptr)-&gt;ecd;     </span><br><span class="line">     (ptr)-&gt;ecd = (<span class="type">uint16_t</span>)((data)[<span class="number">0</span>] &lt;&lt; <span class="number">8</span> | (data)[<span class="number">1</span>]);            </span><br><span class="line">     (ptr)-&gt;speed_rpm = (<span class="type">uint16_t</span>)((data)[<span class="number">2</span>] &lt;&lt; <span class="number">8</span> | (data)[<span class="number">3</span>]);      </span><br><span class="line">     (ptr)-&gt;given_current = (<span class="type">uint16_t</span>)((data)[<span class="number">4</span>] &lt;&lt; <span class="number">8</span> | (data)[<span class="number">5</span>]);  </span><br><span class="line">     (ptr)-&gt;temperate = (data)[<span class="number">6</span>];    </span><br><span class="line"> </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
 <h4 id="2-2-5-接收数据总结与示例"><a href="#2-2-5-接收数据总结与示例" class="headerlink" title="2.2.5 接收数据总结与示例"></a>2.2.5 接收数据总结与示例</h4><h5 id="2-2-5-1总结："><a href="#2-2-5-1总结：" class="headerlink" title="2.2.5.1总结："></a><strong>2.2.5.1总结：</strong></h5><p>接收数据这里写的有点多，这里做一个总结。</p>
 <p>首先我们要先启用相应的can总线，这是一定的。</p>
 <p>然后在can总线上，因为只有一根总线，而并不是所有的信息我们都要接收（虽然在我们配置的时候配置的是都接受），因此需要配置接收过滤器来过滤掉我们不需要的数据。</p>
@@ -540,14 +584,12 @@
 <p>数据因为进入fifo而呼叫了一个中断，我们进入这个中断的时候就需要用对应的函数来获取这个进入fifo中的数据，然后根据一定的格式来解析它。</p>
 <p>在解析的时候为了条例更清晰并且便于我们的操作，我们可以规定一个数据结构体，以及信息解析的一个“方法”。然后在接收中断中我们需要实例化两个结构体。一个结构体是stm32规定的接受数据的结构体，我们获取的帧数据会被解剖填入这个结构体中，其中包括stdid这一项，我们可以通过这一项的数值来判断这帧数据是谁发来的，从而进行对应的操作。 另一个结构体就是我们自己定义的结构体，这个结构体主要是配合我们自己定义的解析数据的方法来使用，将can数据帧中的DATA段数据一项一项地解析出来0。</p>
 <h5 id="2-2-5-2中断回调函数示例："><a href="#2-2-5-2中断回调函数示例：" class="headerlink" title="2.2.5.2中断回调函数示例："></a><strong>2.2.5.2中断回调函数示例</strong>：</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> CAN_CHASSIS_ALL_ID  0x200</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> CAN_3508_M1_ID  0x201</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> CAN_3508_M2_ID 0x202</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> CAN_3508_M3_ID 0x203</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> CAN_3508_M4_ID 0x204</span></span><br><span class="line"> </span><br><span class="line">数据结构体定义</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint16_t</span> ecd;</span><br><span class="line">    <span class="type">int16_t</span> speed_rpm;</span><br><span class="line">    <span class="type">int16_t</span> given_current;</span><br><span class="line">    <span class="type">uint8_t</span> temperate;</span><br><span class="line">    <span class="type">int16_t</span> last_ecd;</span><br><span class="line">&#125; <span class="type">motor_measure_t</span>;</span><br><span class="line"> </span><br><span class="line">数据解析方法定义</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> get_motor_measure(ptr, data)                                    \</span></span><br><span class="line"><span class="meta">    &#123;                                                                   \</span></span><br><span class="line"><span class="meta">        (ptr)-&gt;last_ecd = (ptr)-&gt;ecd;                                   \</span></span><br><span class="line"><span class="meta">        (ptr)-&gt;ecd = (uint16_t)((data)[0] &lt;&lt; 8 | (data)[1]);            \</span></span><br><span class="line"><span class="meta">        (ptr)-&gt;speed_rpm = (uint16_t)((data)[2] &lt;&lt; 8 | (data)[3]);      \</span></span><br><span class="line"><span class="meta">        (ptr)-&gt;given_current = (uint16_t)((data)[4] &lt;&lt; 8 | (data)[5]);  \</span></span><br><span class="line"><span class="meta">        (ptr)-&gt;temperate = (data)[6];                                   \</span></span><br><span class="line"><span class="meta">    &#125;</span></span><br><span class="line"> </span><br><span class="line"><span class="type">static</span> <span class="type">motor_measure_t</span> motor_chassis[<span class="number">7</span>];  <span class="comment">//实例化一个结构体数据，数组中的每一个结构体存放一个对应电机的相关数据，因为整台车上有7个电机因此数组大小为7</span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">HAL_CAN_RxFifo0MsgPendingCallback</span><span class="params">(CAN_HandleTypeDef *hcan)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    CAN_RxHeaderTypeDef rx_header;</span><br><span class="line">    <span class="type">uint8_t</span> rx_data[<span class="number">8</span>];</span><br><span class="line"> </span><br><span class="line">    <span class="built_in">HAL_CAN_GetRxMessage</span>(hcan, CAN_RX_FIFO0, &amp;rx_header, rx_data);</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">switch</span> (rx_header.StdId)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">case</span> CAN_3508_M1_ID:</span><br><span class="line">        <span class="keyword">case</span> CAN_3508_M2_ID:</span><br><span class="line">        <span class="keyword">case</span> CAN_3508_M3_ID:</span><br><span class="line">        <span class="keyword">case</span> CAN_3508_M4_ID:</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">static</span> <span class="type">uint8_t</span> i = <span class="number">0</span>;</span><br><span class="line">            <span class="comment">//get motor id</span></span><br><span class="line">            i = rx_header.StdId - CAN_3508_M1_ID;</span><br><span class="line">            <span class="built_in">get_motor_measure</span>(&amp;motor_chassis[i], rx_data);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <h4 id="2-2-4-can发送配置"><a href="#2-2-4-can发送配置" class="headerlink" title="2.2.4 can发送配置"></a>2.2.4 can发送配置</h4><p>can发送有两点：</p>
 <ol>
 <li>配置好报文结构体</li>
 <li>通过函数HAL_CAN_AddTxMessage发送报文</li>
 </ol>
 <h5 id="2-2-4-1-发送数据结构体配置"><a href="#2-2-4-1-发送数据结构体配置" class="headerlink" title="2.2.4.1 发送数据结构体配置"></a>2.2.4.1 发送数据结构体配置</h5><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">CAN_TxHeaderTypeDef</span>  chassis_tx_message;</span><br><span class="line">chassis_tx_message.StdId = <span class="number">0x200</span>;               <span class="comment">//指定标准标识符</span></span><br><span class="line"> </span><br><span class="line">chassis_tx_message.IDE = <span class="built_in">CAN_ID_STD</span>;            <span class="comment">/*要传输的消息的标识符类型</span></span><br><span class="line"><span class="comment">                                                标准帧：CAN_ID_STD</span></span><br><span class="line"><span class="comment">                                                扩展帧：CAN_ID_EXT*/</span></span><br><span class="line"> </span><br><span class="line">chassis_tx_message.RTR = <span class="built_in">CAN_RTR_DATA</span>;          <span class="comment">/*要传输的消息的帧类型</span></span><br><span class="line"><span class="comment">                                                数据帧：CAN_RTR_DATA</span></span><br><span class="line"><span class="comment">                                                远程帧：CAN_RTR_REMOTE */</span></span><br><span class="line"> </span><br><span class="line">chassis_tx_message.DLC = <span class="number">0x08</span>;                  <span class="comment">/*将要传输的帧的长度。</span></span><br><span class="line"><span class="comment">                                                取值范围为0 ~ 8  */</span></span><br></pre></td></tr></table></figure>
-
 <h5 id="2-2-4-2-发送数据"><a href="#2-2-4-2-发送数据" class="headerlink" title="2.2.4.2 发送数据"></a>2.2.4.2 发送数据</h5><h6 id="发送数据报文结构"><a href="#发送数据报文结构" class="headerlink" title="发送数据报文结构"></a>发送数据报文结构</h6><p>发送数据的结构不是自己随便的定义的，因为我们can发送的信息时让电调接收的，电调接收信息有一个数据帧的格式，我们需要根据这个帧的格式来发送我们的数据，才能控制我们想要控制的东西。</p>
 <blockquote>
 <p>在这里找到C620电调的使用说明：<a target="_blank" rel="noopener" href="https://www.robomaster.com/zh-CN/products/components/general/M3508">M3508减速电机套装 (robomaster.com)</a></p>
@@ -555,7 +597,6 @@
 <p>通过翻阅C620电调的使用说明我们可以看到<strong>我们可以通过控制标识符以及在data段中的对应位置填写数值来控制8个不同的电机的电流大小</strong></p>
 <p><img src="https://www.houenup.com/wp-content/uploads/2022/03/image-20220302001103881.png" alt="RM电机的驱动"></p>
 <h6 id="发送函数"><a href="#发送函数" class="headerlink" title="发送函数"></a>发送函数</h6><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">HAL_CAN_AddTxMessage(<span class="built_in">CAN_HandleTypeDef</span> *hcan, <span class="built_in">CAN_TxHeaderTypeDef</span> *pHeader, uint8_t aData[], uint32_t *pTxMailbox)</span><br><span class="line"> </span><br><span class="line"><span class="number">1.</span> <span class="built_in">CAN_HandleTypeDef</span> *hcan: <span class="built_in">CAN</span>的句柄指针，如果是can1就输入&amp;hcan1， can2 就输入 &amp;hcan2</span><br><span class="line"><span class="number">2.</span> <span class="built_in">CAN_TxHeaderTypeDef</span> *pHeader：待发送的<span class="built_in">CAN</span>数据帧信息的结构体指针。包含了<span class="built_in">CAN</span>的ID，格式等重要信息。</span><br><span class="line"><span class="number">3.</span> uint8_t aData[] ： 装载了待发送的数据的数组名称</span><br><span class="line"><span class="number">4.</span> uint32_t *pTxMailbox： 用于存储<span class="built_in">CAN</span>发送所使用的邮箱号</span><br></pre></td></tr></table></figure>
-
 <p> 这个发送邮箱一般没用</p>
 <h5 id="2-2-4-3-发送数据总结与示例"><a href="#2-2-4-3-发送数据总结与示例" class="headerlink" title="2.2.4.3 发送数据总结与示例"></a>2.2.4.3 发送数据总结与示例</h5><h6 id="2-2-4-3-1-总结"><a href="#2-2-4-3-1-总结" class="headerlink" title="2.2.4.3.1 总结"></a>2.2.4.3.1 总结</h6><p>相较于接收数据，发送数据更加的直接一些。我们只需要关注，怎么发出去，把什么发出去这两个问题即可。</p>
 <p>怎么发出去？ 用函数HAL_CAN_AddTxMessage发出去。</p>
@@ -565,13 +606,10 @@
 <p>内容是什么？我们发送数据的主要内容就是给电机传达转速，也就是电流大小，而电流大小要放在DATA中的对应位置，这样电调才能够准确的解析并执行。</p>
 <h6 id="2-2-4-3-2示例"><a href="#2-2-4-3-2示例" class="headerlink" title="2.2.4.3.2示例"></a>2.2.4.3.2示例</h6><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">static</span> CAN_TxHeaderTypeDef  chassis_tx_message;</span><br><span class="line"><span class="built_in">static</span> uint8_t              chassis_can_send_data[<span class="number">8</span>];</span><br><span class="line">int16_t motor1,motor2,motor3,motor4;</span><br><span class="line">uint32_t send_mail_box; <span class="comment">//发送邮箱一般没什么用 随便是个什么值</span></span><br><span class="line"> </span><br><span class="line">motor1=<span class="number">4000</span>;</span><br><span class="line">motor2=<span class="number">4000</span>;</span><br><span class="line">motor3=<span class="number">4000</span>;</span><br><span class="line">motor4=<span class="number">4000</span>;</span><br><span class="line">chassis_can_send_data[<span class="number">0</span>] = motor1 &gt;&gt; <span class="number">8</span>;</span><br><span class="line">chassis_can_send_data[<span class="number">1</span>] = motor1;</span><br><span class="line">chassis_can_send_data[<span class="number">2</span>] = motor2 &gt;&gt; <span class="number">8</span>;</span><br><span class="line">chassis_can_send_data[<span class="number">3</span>] = motor2;</span><br><span class="line">chassis_can_send_data[<span class="number">4</span>] = motor3 &gt;&gt; <span class="number">8</span>;</span><br><span class="line">chassis_can_send_data[<span class="number">5</span>] = motor3;</span><br><span class="line">chassis_can_send_data[<span class="number">6</span>] = motor4 &gt;&gt; <span class="number">8</span>;</span><br><span class="line">chassis_can_send_data[<span class="number">7</span>] = motor4;</span><br><span class="line"><span class="comment">/* USER CODE END 2 *</span></span><br><span class="line"><span class="comment">/* Infinite loop */</span></span><br><span class="line"><span class="comment">/* USER CODE BEGIN WHILE */</span></span><br><span class="line"><span class="keyword">while</span> (<span class="number">1</span>)</span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">/* USER CODE END WHILE */</span></span><br><span class="line">    <span class="title function_ invoke__">HAL_CAN_AddTxMessage</span>(&amp;hcan1, &amp;chassis_tx_message, chassis_can_send_data, &amp;send_mail_box);</span><br><span class="line">      <span class="title function_ invoke__">HAL_Delay</span>(<span class="number">2</span>);</span><br><span class="line">    <span class="comment">/* USER CODE BEGIN 3 */</span></span><br><span class="line"> &#125;</span><br><span class="line">  <span class="comment">/* USER CODE END 3 */</span></span><br></pre></td></tr></table></figure>
 
-
-
-
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/03/14/RM%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8/" data-id="cl15zpr3m0003povc4nt73qwv" data-title="RM电机驱动" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/03/14/RM%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8/" data-id="cl16a0uw10001i4vch7tohjf9" data-title="RM电机驱动" class="article-share-link">Share</a>
       
       
       
@@ -692,5 +730,20 @@
 
 
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
